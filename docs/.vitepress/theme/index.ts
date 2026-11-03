@@ -1,6 +1,34 @@
 import DefaultTheme from 'vitepress/theme'
+import Markmap from './components/Markmap.vue'
 import 'devicon/devicon.min.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
-import './custom.css'
+import './_custom.css'
+import './css/logo.css'
+import './css/containers.css'
+import './css/title.css'
+import './css/sumary.css'
+import './css/table.css'
 
-export default DefaultTheme
+import IndiceCurso from './components/IndiceCurso.vue';
+import DropDown from  './components/DropDown.vue'
+import Color from './components/Color.vue'
+import CardPane from './components/CardPane.vue'
+import Card from './components/Card.vue'
+import Cmd from './components/Cmd.vue'
+import CmdPane from './components/CmdPane.vue'
+import CollapsibleHeading from "./components/CollapsibleHeading.vue";
+
+export default {
+  extends: DefaultTheme,
+  enhanceApp({ app }) {
+    app.component('Markmap', Markmap)
+    app.component('IndiceCurso', IndiceCurso)
+    app.component('DropDown', DropDown)
+    app.component('Cmd', Cmd)
+    app.component('CmdPane', CmdPane)
+    app.component('Color', Color)
+    app.component('CardPane', CardPane)
+    app.component('Card', Card)
+    app.component('CollapsibleHeading',CollapsibleHeading)
+  }
+}

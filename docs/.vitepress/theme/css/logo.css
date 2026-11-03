@@ -1,0 +1,11 @@
+.enlace-centro {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.enlace-centro img {
+    height: 36px;
+    width: auto;
+}

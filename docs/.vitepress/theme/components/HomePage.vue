@@ -1,4 +1,43 @@
+<script setup>
+import Calendario from './Calendario.vue'
+import RequestJourney  from "./RequestJourney.vue";
+import Docentes from './Docentes.vue';
+import {withBase} from 'vitepress';
 
+const ventajas = [
+  { icon: 'fa-solid fa-users', title: 'Plazas subvencionadas' },
+  { icon: 'fa-solid fa-graduation-cap', title: 'Formación práctica' },
+  { icon: 'fa-solid fa-briefcase', title: 'Docentes profesionales' },
+  { icon: 'fa-solid fa-gear', title: 'Tecnologías actuales' },
+  { icon: 'fa-solid fa-chart-column', title: 'Orientación profesional' }
+]
+
+// Valores pendientes de confirmar con la convocatoria.
+const datos = [
+  { icon: 'fa-regular fa-calendar-days', label: 'Duración', value: '85 días · 6 h/día' },
+  { icon: 'fa-solid fa-calendar-check', label: 'Fechas', value: '28/10/2026- 19/03/2027' },
+  { icon: 'fa-solid fa-location-dot', label: 'Modalidad', value: 'Presencial' },
+  { icon: 'fa-solid fa-users', label: 'Dirigido a', value: 'Personas motivadas' },
+]
+
+const tecnologias = [
+  { name: 'HTML5', icon: 'devicon-html5-plain colored', url: 'https://html.spec.whatwg.org/' },
+  { name: 'CSS3', icon: 'devicon-css3-plain colored', url: 'https://www.w3.org/Style/CSS/' },
+  { name: 'JavaScript', icon: 'devicon-javascript-plain colored', url: 'https://developer.mozilla.org/es/docs/Web/JavaScript' },
+  { name: 'PHP', icon: 'devicon-php-plain colored', url: 'https://www.php.net/' },
+  { name: 'Laravel', icon: 'devicon-laravel-original colored', url: 'https://laravel.com/' },
+  { name: 'Bases de datos', icon: 'devicon-mysql-original colored', url: 'https://www.mysql.com/' },
+  { name: 'Git', icon: 'devicon-git-plain colored', url: 'https://git-scm.com/' },
+  { name: 'Docker', icon: 'devicon-docker-plain colored', url: 'https://www.docker.com/' }
+]
+
+const salidas = [
+  'Desarrollo web front-end',
+  'Desarrollo web back-end',
+  'Desarrollo full stack',
+  'Mantenimiento de aplicaciones web'
+]
+</script>
 <template>
   <div class="inaem-site">
     <!-- CABECERA -->
@@ -25,8 +64,25 @@
       </div>
 
       <nav class="site-nav" aria-label="Navegación principal">
-        <a href="#inicio">Inicio</a>
-        <a href="#el-curso">El curso</a>
+        <a href="https://www.cpilosenlaces.com"
+           class="enlace-centro"
+           target="_blank"
+           rel="noopener noreferrer">
+          <img width="200"
+               :src="withBase('/images/logo-cpifp.png')"
+               alt="Logo CPIFP Los Enlaces">
+        </a>
+        <a href="https://cpilosenlaces.aeducar.es/"
+           target="_blank"
+           rel="noopener noreferrer">
+          <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+          Aeducar
+        </a>
+        <a :href="withBase('/01_contenidos/')" class="nav-destacado">
+          <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+          Contenidos módulo servidor
+        </a>
+
         <a href="#tecnologias">Tecnologías</a>
         <a href="#salidas-profesionales">Salidas profesionales</a>
         <a href="#calendario">Calendario</a>
@@ -43,9 +99,27 @@
           <p class="hero-subtitle">Aprende. Crea. Construye tu futuro.</p>
           <p class="hero-description">Formación práctica y actualizada para adquirir las competencias más demandadas del sector, con plazas subvencionadas por el Instituto Aragonés de Empleo (INAEM).</p>
           <div class="hero-actions">
-            <a href="#informacion" class="btn btn-primary"><i class="fa-regular fa-envelope" aria-hidden="true"></i> Solicitar información →</a>
-            <a href="#el-curso" class="btn btn-outline">Ver el curso</a>
-            <a href="#calendario" class="btn btn-outline"><i class="fa-regular fa-calendar-days" aria-hidden="true"></i> Ver calendario</a>
+            <a href="#informacion" class="btn btn-primary">
+              <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+              Solicitar información →
+            </a>
+            <a href="https://cpilosenlaces.aeducar.es/"
+               target="_blank"
+               class="btn btn-outline"
+               rel="noopener noreferrer">
+              <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+              Aeducar
+            </a>
+            <a :href="withBase('/01_contenidos/')" class="btn btn-outline">
+              <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+              Contenidos módulo servidor →
+            </a>
+
+
+            <a href="#calendario" class="btn btn-outline">
+              <i class="fa-regular fa-calendar-days" aria-hidden="true"></i>
+              Ver calendario
+            </a>
           </div>
         </div>
       </section>
@@ -71,14 +145,22 @@
           <span class="section-kicker">EL CURSO</span>
           <h2>Una formación completa para tu futuro profesional</h2>
           <p>Adquiere los conocimientos y habilidades necesarios para desarrollar aplicaciones web modernas, desde los fundamentos de programación hasta su despliegue en entornos profesionales.</p>
-          <a href="#informacion" class="btn btn-primary">Conoce todos los detalles →</a>
         </div>
         <div id="tecnologias" class="course-technologies">
           <span class="section-kicker">TECNOLOGÍAS</span>
           <div class="tech-grid">
-            <div v-for="tech in tecnologias" :key="tech.name" class="tech-card">
-              <i :class="tech.icon" aria-hidden="true"></i><span>{{ tech.name }}</span>
-            </div>
+            <a
+                v-for="tech in tecnologias"
+                :key="tech.name"
+                :href="tech.url"
+                class="tech-card"
+                target="_blank"
+                rel="noopener noreferrer"
+                :title="`Visitar la web de ${tech.name}`"
+            >
+              <i :class="tech.icon" aria-hidden="true"></i>
+              <span>{{ tech.name }}</span>
+            </a>
           </div>
         </div>
         <div id="salidas-profesionales" class="career-content">
@@ -122,9 +204,9 @@
             <div class="footer-emails">
               <a href="tel:+34976300804"><i class="fa-solid fa-phone" aria-hidden="true"></i><strong>976 300 804</strong></a>
               <div class="footer-contact-person"><strong>Miguel Luengo</strong></div>
-              <div class="footer-contact-person"><strong>Cristina López</strong><a href="mailto:cristina.lopez@cpifplosenlaces.com"><i class="fa-regular fa-envelope" aria-hidden="true"></i> cristina.lopez@cpifplosenlaces.com</a></div>
-              <div class="footer-contact-person"><strong>Manuel Romero</strong><a href="mailto:manuel.romero@cpifplosenlaces.com"><i class="fa-regular fa-envelope" aria-hidden="true"></i> manuel.romero@cpifplosenlaces.com</a></div>
-              <div class="footer-contact-person"><strong>Formación para el Empleo</strong><a href="mailto:formacionempleo@cpifplosenlaces.com"><i class="fa-regular fa-envelope" aria-hidden="true"></i> formacionempleo@cpifplosenlaces.com</a></div>
+              <div class="footer-contact-person"><strong>Cristina López</strong><a href="mailto:cristina.lopez@cpilosenlaces.com"><i class="fa-regular fa-envelope" aria-hidden="true"></i> cristina.lopez@cpilosenlaces.com</a></div>
+              <div class="footer-contact-person"><strong>Manuel Romero</strong><a href="mailto:manuel.romero@cpilosenlaces.com"><i class="fa-regular fa-envelope" aria-hidden="true"></i> manuel.romero@cpilosenlaces.com</a></div>
+              <div class="footer-contact-person"><strong>Formación para el Empleo</strong><a href="mailto:formacionempleo@cpilosenlaces.com"><i class="fa-regular fa-envelope" aria-hidden="true"></i> formacionempleo@cpilosenlaces.com</a></div>
             </div>
           </div>
         </div>
@@ -134,43 +216,4 @@
   </div>
 </template>
 
-<script setup>
-import Calendario from './Calendario.vue'
-import RequestJourney  from "./RequestJourney.vue";
-import Docentes from './Docentes.vue';
 
-const ventajas = [
-  { icon: 'fa-solid fa-users', title: 'Plazas subvencionadas' },
-  { icon: 'fa-solid fa-graduation-cap', title: 'Formación práctica' },
-  { icon: 'fa-solid fa-briefcase', title: 'Docentes profesionales' },
-  { icon: 'fa-solid fa-gear', title: 'Tecnologías actuales' },
-  { icon: 'fa-solid fa-chart-column', title: 'Orientación profesional' }
-]
-
-// Valores pendientes de confirmar con la convocatoria.
-const datos = [
-  { icon: 'fa-regular fa-calendar-days', label: 'Duración', value: '85 días · 6 h/día' },
-  { icon: 'fa-solid fa-calendar-check', label: 'Inicio previsto', value: '28/10/2026' },
-  { icon: 'fa-solid fa-location-dot', label: 'Modalidad', value: 'Por confirmar' },
-  { icon: 'fa-solid fa-users', label: 'Dirigido a', value: 'Consultar requisitos' },
-  { icon: 'fa-regular fa-file-lines', label: 'Acreditación', value: 'Por confirmar' }
-]
-
-const tecnologias = [
-  { name: 'HTML5', icon: 'devicon-html5-plain colored' },
-  { name: 'CSS3', icon: 'devicon-css3-plain colored' },
-  { name: 'JavaScript', icon: 'devicon-javascript-plain colored' },
-  { name: 'PHP', icon: 'devicon-php-plain colored' },
-  { name: 'Laravel', icon: 'devicon-laravel-original colored' },
-  { name: 'Bases de datos', icon: 'devicon-mysql-original colored' },
-  { name: 'Git', icon: 'devicon-git-plain colored' },
-  { name: 'Docker', icon: 'devicon-docker-plain colored' }
-]
-
-const salidas = [
-  'Desarrollo web front-end',
-  'Desarrollo web back-end',
-  'Desarrollo full stack',
-  'Mantenimiento de aplicaciones web'
-]
-</script>
