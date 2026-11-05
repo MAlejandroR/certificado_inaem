@@ -5,6 +5,8 @@ import {dawsContainers} from './markdows/containers'
 import {hugoCompatPlugin} from './hugo-compat'
 import {full as emoji} from 'markdown-it-emoji'
 import { sidebarProgramacion } from './sidebar/programacion'
+import { sidebarScratch } from './sidebar/scratch'
+import { scratchblocksPlugin } from './markdows/scratchblocks'
 
 export default withMermaid(
     defineConfig({
@@ -33,6 +35,8 @@ export default withMermaid(
                 dawsContainers(md);
                 md.use(hugoCompatPlugin);
                 md.use(emoji)
+                md.use(scratchblocksPlugin)
+
             },
             toc: {
                 level: [1, 2, 3, 4],
@@ -47,7 +51,12 @@ export default withMermaid(
             '04_Scratch/03_Secuenciales/index.md': 'scratch/estructuras-secuenciales/index.md',
             '04_Scratch/04_Selectivas/index.md': 'scratch/estructuras-selectivas/index.md',
             '04_Scratch/05_Repetitivas/index.md': 'scratch/estructuras-repetitivas/index.md',
+            '04_Scratch/06_bloques/index.md': 'scratch/clones-subprogramas/index.md',
             '04_Scratch/Ejemplos/index.md': 'scratch/ejemplos/index.md',
+
+            // Ejercicios
+            '04_Scratch/Ejemplos/ejercicios/(.*).md':
+                'scratch/ejemplos/ejercicios/(.*).md',
         },
         themeConfig: {
             outline: {
@@ -63,7 +72,7 @@ export default withMermaid(
                     link: '/'
                 },
                 {
-                    text: '📚 Contenidos de servidor',
+                    text: '📚 Contenidos del módulo servidor',
                     link: '/01_contenidos/'
                 }
             ],
@@ -206,48 +215,7 @@ export default withMermaid(
                 ],
 
                 '/03_Programacion/': sidebarProgramacion,
-                '/scratch/': [
-                    {
-                        text: '← Volver a contenidos',
-                        link: '/01_contenidos/'
-                    },
-                    {
-                        text: '<i class="fa-solid fa-puzzle-piece"></i> Scratch',
-                        link: '/scratch/',
-                        collapsed: false,
-                        items: [
-                            {
-
-                                text: '<i class="fa-solid fa-laptop-code"></i> Programación',
-                                link: '/scratch/primeros-pasos/'
-                            },
-                            {
-                                text: '<i class="fa-solid fa-desktop"></i> Entorno Scratch',
-                                link: '/scratch/entorno-scratch/'
-                            },
-                            {
-                                text: '<i class="fa-solid fa-list-check"></i> Instrucciones',
-                                link: '/scratch/instrucciones/'
-                            },
-                            {
-                                text: '<i class="fa-solid fa-arrow-right-arrow-left"></i> Estructuras secuenciales',
-                                link: '/scratch/estructuras-secuenciales/'
-                            },
-                            {
-                                text: '<i class="fa-solid fa-code-branch"></i> Estructuras selectivas',
-                                link: '/scratch/estructuras-selectivas/'
-                            },
-                            {
-                                text: '<i class="fa-solid fa-rotate"></i> Estructuras repetitivas',
-                                link: '/scratch/estructuras-repetitivas/'
-                            },
-                            {
-                                text: '<i class="fa-solid fa-flask"></i> Ejemplos',
-                                link: '/scratch/ejemplos/'
-                            }
-                        ]
-                    }
-                ],
+                '/scratch/':sidebarScratch,
 
                 '/05_PHP/': [
                     {

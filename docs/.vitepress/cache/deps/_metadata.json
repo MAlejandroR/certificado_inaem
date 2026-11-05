@@ -1,73 +1,79 @@
 {
-  "hash": "c38a02d3",
+  "hash": "8118c4c0",
   "configHash": "5206ad86",
-  "lockfileHash": "d310ed36",
-  "browserHash": "32f803b9",
+  "lockfileHash": "869358c5",
+  "browserHash": "a5cf952e",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "db5919a2",
+      "fileHash": "f55dc26a",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "932de17d",
+      "fileHash": "af460259",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "ad805ef5",
+      "fileHash": "3044ee0f",
       "needsInterop": false
     },
     "fastdom": {
       "src": "../../../../node_modules/fastdom/fastdom.js",
       "file": "fastdom.js",
-      "fileHash": "5d01fb8a",
+      "fileHash": "e3569adf",
       "needsInterop": true
     },
     "fastdom/extensions/fastdom-promised.js": {
       "src": "../../../../node_modules/fastdom/extensions/fastdom-promised.js",
       "file": "fastdom_extensions_fastdom-promised__js.js",
-      "fileHash": "a4dba4b5",
+      "fileHash": "3a246109",
       "needsInterop": true
     },
     "@braintree/sanitize-url": {
       "src": "../../../../node_modules/@braintree/sanitize-url/dist/index.js",
       "file": "@braintree_sanitize-url.js",
-      "fileHash": "16177bea",
+      "fileHash": "a072c6cd",
       "needsInterop": true
     },
     "dayjs": {
       "src": "../../../../node_modules/dayjs/dayjs.min.js",
       "file": "dayjs.js",
-      "fileHash": "f61a282c",
+      "fileHash": "03bc9345",
       "needsInterop": true
     },
     "cytoscape-cose-bilkent": {
       "src": "../../../../node_modules/cytoscape-cose-bilkent/cytoscape-cose-bilkent.js",
       "file": "cytoscape-cose-bilkent.js",
-      "fileHash": "2d7c79b5",
+      "fileHash": "1bb77625",
       "needsInterop": true
     },
     "cytoscape": {
       "src": "../../../../node_modules/cytoscape/dist/cytoscape.esm.mjs",
       "file": "cytoscape.js",
-      "fileHash": "4ee5d660",
+      "fileHash": "ded6fa2e",
       "needsInterop": false
     },
     "markmap-lib": {
       "src": "../../../../node_modules/markmap-lib/dist/browser/index.mjs",
       "file": "markmap-lib.js",
-      "fileHash": "450e7bbf",
+      "fileHash": "552e0716",
       "needsInterop": false
     },
     "markmap-view": {
       "src": "../../../../node_modules/markmap-view/dist/index.js",
       "file": "markmap-view.js",
-      "fileHash": "8f3aceaa",
+      "fileHash": "2378e093",
+      "needsInterop": false
+    },
+    "scratchblocks": {
+      "src": "../../../../node_modules/scratchblocks/build/scratchblocks.min.es.js",
+      "file": "scratchblocks.js",
+      "fileHash": "8aae86f8",
       "needsInterop": false
     }
   },

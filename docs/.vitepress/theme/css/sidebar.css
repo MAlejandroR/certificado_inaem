@@ -244,3 +244,56 @@
 .VPSidebarItem.level-1 .VPLink.active .sidebar-title i {
     color: var(--sidebar-icon);
 }
+/* ============================================================
+   AJUSTES SIDEBAR CERTIFICADO
+   ============================================================ */
+
+/* Fondo del sidebar */
+.VPSidebar {
+    background-color: #f7f7f7 !important;
+}
+
+/* Título principal */
+.VPSidebarItem.level-0 > .item .sidebar-title {
+    color: #41434a !important;
+    font-family: var(--sidebar-font);
+    font-size: var(--sidebar-title-size) !important;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Evitar que el título activo aparezca azul */
+.VPSidebarItem.level-0 > .item .VPLink.active .sidebar-title {
+    color: #41434a !important;
+}
+
+/* Línea inferior del título */
+.VPSidebarItem.level-0 > .item {
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(
+            to right,
+            var(--sidebar-line-start),
+            var(--sidebar-line-middle) 55%,
+            var(--sidebar-line-end)
+    ) 1;
+}
+
+/* Sangría de los elementos secundarios */
+.VPSidebarItem.level-0 > .items {
+    padding-left: var(--sidebar-indent) !important;
+}
+
+/* Tamaño de los elementos secundarios */
+.VPSidebarItem.level-1 .sidebar-title {
+    font-size: var(--sidebar-item-size) !important;
+    line-height: var(--sidebar-item-line-height);
+    color: var(--sidebar-text);
+}
+
+/* Separación entre elementos */
+.VPSidebarItem.level-1 > .item {
+    padding: 4px 0;
+}
+:root {
+    --vp-sidebar-width: 260px;
+}

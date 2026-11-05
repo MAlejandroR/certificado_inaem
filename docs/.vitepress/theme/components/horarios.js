@@ -56,7 +56,7 @@ export const clases = {
     // NOVIEMBRE 2026
     '2026-11-02': { tipo: 'festivo', motivo: 'Todos los Santos (traslado)' },
     '2026-11-03': { manuel: [1, 2, 3], ignacio: [4, 5, 6] },
-    '2026-11-04': { oscar_gascon: [1, 2], manuel: [1, 2, 3, 4] },
+    '2026-11-04': { oscar_gascon: [1, 2], manuel: [3, 4,5,6] },
     '2026-11-05': { oscar_gascon: [1, 2, 3], manuel: [4, 5, 6] },
     '2026-11-06': { oscar_gascon: [1, 2, 3], ignacio: [4, 5, 6] },
     '2026-11-09': { manuel: [1, 2, 3, 4], oscar_arino: [5, 6] },
@@ -74,7 +74,7 @@ export const clases = {
     '2026-11-25': { oscar_gascon: [1, 2, 3], manuel: [4, 5, 6] },
     '2026-11-26': { oscar_gascon: [1, 2, 3], manuel: [4, 5, 6] },
     '2026-11-27': { oscar_gascon: [1, 2, 3], ignacio: [4, 5, 6] },
-    '2026-11-30': { oscar_arino: [5, 6] },
+    '2026-11-30': { manuel: [1, 2, 3, 4],oscar_arino: [5, 6] },
 
     // DICIEMBRE 2026
     '2026-12-01': { manuel: [1, 2, 3], ignacio: [4, 5, 6] },
