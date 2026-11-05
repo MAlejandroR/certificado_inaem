@@ -300,7 +300,7 @@ Cada manzana estará protegida por una **fruta guardiana** que se moverá contin
    - Regresará a su posición inicial.
    - Permanecerá bloqueado durante 2 segundos.
 
-<DropDown title="Implementación RF 4">
+<DropDown title="Implementación RF 4" password="guardianes">
 
 <Color>Crear las bolas guardianas</Color>
 
