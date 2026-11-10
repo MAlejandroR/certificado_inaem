@@ -29,6 +29,7 @@ ___
 El personaje se moverá con las cuatro flechas del teclado y cambiará de disfraz en cada movimiento.
 
 <table>
+<tbody>
 <tr>
 <td width="50%">
 
@@ -85,6 +86,7 @@ siguiente disfraz
 
 </td>
 </tr>
+</tbody>
 </table>
 
 </DropDown>

@@ -9,6 +9,7 @@ import './css/title.css'
 import './css/sumary.css'
 import './css/table.css'
 import './css/sidebar.css'
+import './css/colors.css'
 
 import IndiceCurso from './components/IndiceCurso.vue';
 import DropDown from  './components/DropDown.vue'
@@ -21,6 +22,9 @@ import CollapsibleHeading from "./components/CollapsibleHeading.vue";
 import ScratchBlocks from './components/ScratchBlocks.vue'
 import Ejercicio  from "./components/ejercicios/Ejercicio.vue";
 import TituloEjercicio  from "./components/ejercicios/TituloEjercicio.vue";
+import PhpRunner from "./components/PhpRunner.vue";
+import VisitorCount from "./components/VisitorCount.vue";
+
 export default {
   extends: DefaultTheme,
   enhanceApp({ app }) {
@@ -36,5 +40,7 @@ export default {
     app.component('ScratchBlocks', ScratchBlocks)
     app.component('Ejercicio', Ejercicio)
     app.component('TituloEjercicio', TituloEjercicio)
+    app.component('PhpRunner', PhpRunner)
+    app.component('VisitorCount', VisitorCount);
   }
 }

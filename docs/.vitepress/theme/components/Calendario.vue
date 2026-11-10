@@ -1,8 +1,7 @@
-
 <script setup>
-import { computed, ref } from 'vue'
-import { withBase } from 'vitepress'
-import { horas, profesores, clases } from './horarios.js'
+import {computed, ref, onMounted} from 'vue'
+import {withBase} from 'vitepress'
+import {horas, profesores, clases} from './horarios.js'
 
 // --------------------------------------------------
 // CONFIGURACIÓN GENERAL
@@ -19,7 +18,32 @@ const meses = [
 
 const diasSemana = ['L', 'M', 'X', 'J', 'V', 'S', 'D']
 
+const hoy = ref(null)
 const mesActual = ref(0)
+
+onMounted(() => {
+  // Fecha simulada para pruebas
+  const fechaActual = new Date();
+
+  hoy.value = claveFecha(fechaActual)
+
+  const indice = meses.findIndex(
+      ([anio, mes]) =>
+          anio === fechaActual.getFullYear() &&
+          mes === fechaActual.getMonth()
+  )
+
+  mesActual.value = indice !== -1
+      ? indice
+      : fechaActual < new Date(meses[0][0], meses[0][1], 1)
+          ? 0
+          : meses.length - 1
+})
+
+function esHoy(fecha) {
+  return hoy.value === claveFecha(fecha)
+}
+
 const seleccionada = ref(null)
 
 const inicio = new Date(2026, 9, 28)
@@ -81,7 +105,7 @@ const celdas = computed(() => {
   return [
     ...Array(desplazamiento).fill(null),
     ...Array.from(
-        { length: total },
+        {length: total},
         (_, i) => new Date(anio, mes, i + 1)
     ),
   ]
@@ -356,13 +380,14 @@ const listaProfesores = computed(() =>
               type="button"
               class="cal-day"
               :class="{
-              'cal-planned': esDiaLectivo(fecha),
-              'cal-vacation': esFestivo(fecha),
-              'cal-weekend': esFinSemana(fecha),
-              'cal-unassigned': esSinAsignacion(fecha),
-              'cal-outside': !estaEnPeriodo(fecha),
-              'cal-selected': seleccionada === claveFecha(fecha)
-            }"
+  'cal-planned': esDiaLectivo(fecha),
+  'cal-vacation': esFestivo(fecha),
+  'cal-weekend': esFinSemana(fecha),
+  'cal-unassigned': esSinAsignacion(fecha),
+  'cal-outside': !estaEnPeriodo(fecha),
+  'cal-selected': seleccionada === claveFecha(fecha),
+  'cal-today': esHoy(fecha)
+}"
               :aria-pressed="seleccionada === claveFecha(fecha)"
               :aria-label="formatearFecha(fecha)"
               @click="seleccionar(fecha)"
@@ -928,4 +953,34 @@ const listaProfesores = computed(() =>
   }
 }
 
+.cal-today {
+  background: #eaf3ff;
+  border: 2px solid #3b82f6;
+  animation: pulso-hoy 3s ease-in-out infinite;
+}
+
+.cal-today .cal-day-number {
+  background: #eaf3ff;
+  border: 2px solid #3b82f6;
+  transform: scale(1.04);
+  position: relative;
+  z-index: 1;
+  animation: pulso-hoy 3s ease-in-out infinite
+}
+
+@keyframes pulso-hoy {
+  0%, 100% {
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.08);
+  }
+
+  50% {
+    box-shadow: 0 0 0 5px rgba(59, 130, 246, 0.16);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cal-today {
+    animation: none;
+  }
+}
 </style>

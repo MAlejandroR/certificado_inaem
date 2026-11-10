@@ -1,4 +1,4 @@
-import "./chunk-G3PMV62Z.js";
+import "./chunk-B4Q33VKO.js";
 
 // node_modules/scratchblocks/build/scratchblocks.min.es.js
 var t = { pen: "pen", video: "sensing", music: "sound" };

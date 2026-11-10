@@ -15,7 +15,7 @@ const contenidos = [
     icono: 'fa-solid fa-globe',
     titulo: 'La web y las redes',
     descripcion: 'Internet, redes y funcionamiento de la web.',
-    enlace: '/02_Web/'
+    enlace: '/fundamentos-web/'
   },
   {
     numero: '03',
@@ -37,6 +37,13 @@ const contenidos = [
     titulo: 'PHP',
     descripcion: 'Programación web del lado del servidor.',
     enlace: '/php/'
+  },
+  {
+    numero: '07',
+    icono: 'fa-brands fa-php',
+    titulo: 'PHP',
+    descripcion: 'Apuntes servidor antiguo.',
+    enlace: 'https://manuel.web.infenlaces.com/php_old/'
   },
   {
     numero: '06',

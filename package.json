@@ -21,10 +21,16 @@
     "vitepress-plugin-mermaid": "^2.0.17"
   },
   "dependencies": {
+    "@codemirror/lang-php": "^6.0.2",
+    "@codemirror/language": "^6.13.1",
     "@fortawesome/fontawesome-free": "^7.3.1",
+    "@lezer/highlight": "^1.2.5",
     "devicon": "^2.17.0",
+    "markdown-it-footnote": "^4.0.0",
     "markmap-lib": "^0.18.12",
     "markmap-view": "^0.18.12",
-    "scratchblocks": "^3.7.1"
+    "scratchblocks": "^3.7.1",
+    "shiki": "^4.6.0",
+    "vue-codemirror": "^6.1.1"
   }
 }

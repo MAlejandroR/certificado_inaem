@@ -61,7 +61,7 @@ export const clases = {
     '2026-11-06': { oscar_gascon: [1, 2, 3], ignacio: [4, 5, 6] },
     '2026-11-09': { manuel: [1, 2, 3, 4], oscar_arino: [5, 6] },
     '2026-11-10': { manuel: [1, 2, 3], ignacio: [4, 5, 6] },
-    '2026-11-11': { oscar_gascon: [1, 2], manuel: [1, 2, 3, 4] },
+    '2026-11-11': { oscar_gascon: [1, 2], manuel: [3, 4,5,6] },
     '2026-11-12': { oscar_gascon: [1, 2, 3], manuel: [4, 5, 6] },
     '2026-11-13': { oscar_gascon: [1, 2, 3], ignacio: [4, 5, 6] },
     '2026-11-16': { manuel: [1, 2, 3, 4], oscar_arino: [5, 6] },

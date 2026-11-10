@@ -1,6 +1,6 @@
 // ===== PHP =====
 export const phpRewrites: Record<string, string> = {
-'04_php/index.md': 'php/index.md',
+    '04_php/index.md': 'php/index.md',
     '04_php/01_introduccion/(.*)': 'php/introduccion/(.*)',
     '04_php/03_empezando/(.*)': 'php/empezando/(.*)',
     '04_php/04_escribiendo/(.*)': 'php/escribiendo/(.*)',

@@ -12,7 +12,7 @@ import {
   __commonJS,
   __export,
   __toESM
-} from "./chunk-G3PMV62Z.js";
+} from "./chunk-B4Q33VKO.js";
 
 // node_modules/katex/dist/katex.js
 var require_katex = __commonJS({

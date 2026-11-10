@@ -3,6 +3,7 @@ import Calendario from './Calendario.vue'
 import RequestJourney  from "./RequestJourney.vue";
 import Docentes from './Docentes.vue';
 import {withBase} from 'vitepress';
+import Footer from "./Footer.vue";
 
 const ventajas = [
   { icon: 'fa-solid fa-users', title: 'Plazas subvencionadas' },
@@ -210,7 +211,7 @@ const salidas = [
             </div>
           </div>
         </div>
-        <p class="footer-bottom">Formación subvencionada por el Instituto Aragonés de Empleo. Información sujeta a las condiciones de la convocatoria.</p>
+        <Footer/>
       </footer>
     </main>
   </div>
