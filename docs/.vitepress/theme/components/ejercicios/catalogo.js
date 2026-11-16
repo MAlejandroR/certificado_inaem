@@ -4,10 +4,11 @@
 
 
 const archivos = import.meta.glob(
-    // '../../../../**/ejercicios/*.md',
-    //Los ficheros deberán de tener la estructura: ejercicios/dir/index.md
-    '../../../../**/ejercicios/**/index.md',
-    {eager: true}
+    [
+        '../../../../**/ejercicios/**/index.md',
+        '../../../../**/16_ejercicios/*/ejercicio*/index.md'
+    ],
+    { eager: true }
 )
 
 console.log('Archivos encontrados:', Object.keys(archivos));

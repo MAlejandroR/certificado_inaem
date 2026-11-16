@@ -1,7 +1,7 @@
-import type { DefaultTheme } from 'vitepress'
-import { icon } from './utils.ts'
+import type {DefaultTheme} from 'vitepress'
+import {icon} from './utils'
 
-export const php: DefaultTheme.SidebarItem[] = [
+export const phpSidebar: DefaultTheme.SidebarItem[] = [
     {
         text: icon('fa-brands fa-php', 'PHP'),
         link: '/php/',
@@ -25,11 +25,37 @@ export const php: DefaultTheme.SidebarItem[] = [
             },
             {
                 text: icon('fa-solid fa-database', 'Tipos de datos'),
-                link: '/php/tipos/'
+                link: '/php/tipos/',
+                collapsed: true,
+                items: [
+                    {
+                        text: icon('fa-solid fa-hashtag', 'Enteros (int)'),
+                        link: '/php/tipo-entero/'
+                    },
+                    {
+                        text: icon('fa-solid fa-toggle-on', 'Null y booleanos'),
+                        link: '/php/tipo-bool/'
+                    },
+                    {
+                        text: icon('fa-solid fa-font', 'Cadenas (string)'),
+                        link: '/php/tipo-string/'
+                    }
+                ]
             },
             {
                 text: icon('fa-solid fa-code-branch', 'Estructuras de control'),
-                link: '/php/estructuras-control/'
+                link: '/php/estructuras-control/',
+                collapsed: true,
+                items: [
+                    {
+                        text: 'Selectivas',
+                        link: '/php/estructuras-selectivas/'
+                    },
+                    {
+                        text: 'Repetitivas',
+                        link: '/php/estructuras-repetitivas/'
+                    },
+                ]
             },
             {
                 text: icon('fa-solid fa-calculator', 'Expresiones'),
@@ -66,6 +92,11 @@ export const php: DefaultTheme.SidebarItem[] = [
             {
                 text: icon('fa-solid fa-server', 'Bases de datos en PHP'),
                 link: '/php/bases-de-datos/',
+                collapsed: true
+            },
+            {
+                text: icon('fa-solid fa-code', 'Ejercicios de PHP'),
+                link: '/php/ejercicios/',
                 collapsed: true
             }
         ]

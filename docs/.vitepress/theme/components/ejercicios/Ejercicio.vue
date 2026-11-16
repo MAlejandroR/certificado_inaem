@@ -1,20 +1,23 @@
-
 <script setup>
-import { computed, ref } from 'vue'
-import { withBase } from 'vitepress'
+import {computed, ref} from 'vue'
+import {withBase} from 'vitepress'
 import PhpRunner from './../PhpRunner.vue'
-import { obtenerCodigoSolucion } from './soluciones.js'
-import CodigoFuente from './CodigoFuente.vue'
 
-import { obtenerEjercicio } from './catalogo.js'
+import {obtenerEjercicio} from './catalogo.js'
 
 // Propiedades recibidas desde el Markdown
 const props = defineProps({
   id: {
     type: String,
     required: true
+  },
+  open: {
+    type: Boolean,
+    default: false
   }
 })
+
+const isOpen = ref(props.open);
 
 //Calcular la url de la posible solución
 const urlSolucion = computed(() => {
@@ -30,16 +33,12 @@ const urlSolucion = computed(() => {
 
 //Saber si podemos ver el código
 const mostrarFuente = ref(false);
-//Que exista solución y esté en frontmatter activada la opción
-const puedeVerCodigo=computed (()=>
-  Boolean(ejercicio.value?.solucion && ejercicio.value?.mostrarCodigo)
-);
-const codigoSolucion = computed(() => {
-  if (!puedeVerCodigo.value) return null
 
-  return obtenerCodigoSolucion(
-      ejercicio.value.ruta,
-      ejercicio.value.solucion
+//Que exista solución y esté en frontmatter activada la opción
+const puedeVerCodigo = computed(() => {
+  return Boolean(
+      ejercicio.value?.solucion &&
+      ejercicio.value?.mostrarCodigo
   )
 })
 
@@ -55,8 +54,14 @@ console.log('Ejercicio encontrado:', ejercicio.value)
   <div v-if="ejercicio" class="ejercicio">
 
     <div class="ejercicio-cabecera">
-      <div class="ejercicio-title">
-        <i :class="ejercicio.icon" aria-hidden="true"></i>
+      <button class="ejercicio-title"
+              :aria-expanded="isOpen"
+              @click="isOpen = !isOpen">
+        <i
+            :class="isOpen
+        ? 'fa-solid fa-chevron-down'
+        : 'fa-solid fa-chevron-right'"
+        ></i>
 
         <span class="ejercicio-numero">
         Ejercicio {{ ejercicio.orden }}:
@@ -65,7 +70,7 @@ console.log('Ejercicio encontrado:', ejercicio.value)
         <span class="ejercicio-nombre">
         {{ ejercicio.titulo }}
     </span>
-      </div>
+      </button>
       <div class="ejercicio-acciones">
 
         <a :href="withBase('/' + ejercicio.url.replace(/\.md$/, '.html'))">
@@ -93,32 +98,29 @@ console.log('Ejercicio encontrado:', ejercicio.value)
         </button>
       </div>
     </div>
+    <div v-show="isOpen">
+
     <div class="ejercicio-contenido vp-doc">
 
-      <component :is="ejercicio.componente" />
+      <component :is="ejercicio.componente"/>
     </div>
 
 
     <div v-if="puedeVerCodigo && mostrarFuente" class="ejercicio-fuente">
-
       <div class="ejercicio-fuente__titulo">
         <i class="fa-solid fa-file-code"></i>
         Código fuente de la solución
       </div>
 
-      <CodigoFuente
-          v-if="codigoSolucion !== null"
-          :codigo="codigoSolucion"
-      />
-      <p v-else>
-        No se ha encontrado el archivo de solución.
+      <p>
+        La visualización del código estará disponible cuando
+        conectemos el servidor de soluciones PHP.
       </p>
-
     </div>
 
-    <PhpRunner filename="ejercicio.php" description="Código del ejercicio"  />
+    <PhpRunner filename="ejercicio.php" description="Código del ejercicio"/>
 
-
+    </div>
   </div>
 
   <div v-else class="ejercicio-error">
@@ -226,6 +228,7 @@ console.log('Ejercicio encontrado:', ejercicio.value)
 :global(.dark) .ejercicio-cabecera a {
   color: #93C5FD;
 }
+
 .ejercicio-acciones {
   display: flex;
   align-items: center;
@@ -249,6 +252,7 @@ console.log('Ejercicio encontrado:', ejercicio.value)
   background: #115e3c;
   color: white;
 }
+
 .ejercicio-acciones .btn-codigo {
   display: inline-flex;
   align-items: center;
@@ -286,20 +290,5 @@ console.log('Ejercicio encontrado:', ejercicio.value)
 :global(.dark) .ejercicio-fuente {
   background: #0f172a;
   color: #e2e8f0;
-}
-.ejercicio-fuente pre {
-  margin: 0;
-  padding: 16px;
-  border-radius: 6px;
-  background: #1e293b;
-  color: #e2e8f0;
-  overflow-x: auto;
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
-.ejercicio-fuente code {
-  font-family: monospace;
-  white-space: pre;
 }
 </style>

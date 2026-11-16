@@ -81,6 +81,12 @@
     --sidebar-item-gap: 6px;
     --sidebar-item-line-height: 1.15;
     --sidebar-title-margin: 15px;
+
+
+    /* Elementos desplegables */
+    --sidebar-chevron-size: 16px;
+    --sidebar-chevron-gap: 8px;
+    --sidebar-children-indent: 20px;
 }
 
 
@@ -244,56 +250,86 @@
 .VPSidebarItem.level-1 .VPLink.active .sidebar-title i {
     color: var(--sidebar-icon);
 }
+
 /* ============================================================
-   AJUSTES SIDEBAR CERTIFICADO
+   8. ELEMENTOS DESPLEGABLES
    ============================================================ */
 
-/* Fondo del sidebar */
-.VPSidebar {
-    background-color: #f7f7f7 !important;
+/* Padre con hijos: texto y flecha juntos */
+.VPSidebarItem.level-1.collapsible > .item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--sidebar-chevron-gap);
 }
 
-/* Título principal */
-.VPSidebarItem.level-0 > .item .sidebar-title {
-    color: #41434a !important;
-    font-family: var(--sidebar-font);
-    font-size: var(--sidebar-title-size) !important;
-    font-weight: 700;
-    text-transform: uppercase;
+/* Enlace ajustado al texto */
+.VPSidebarItem.level-1.collapsible > .item > .VPLink {
+    width: auto;
+    flex: 0 1 auto;
+    min-width: 0;
 }
 
-/* Evitar que el título activo aparezca azul */
-.VPSidebarItem.level-0 > .item .VPLink.active .sidebar-title {
-    color: #41434a !important;
+/* El título no ocupa toda la fila */
+.VPSidebarItem.level-1.collapsible > .item .sidebar-title {
+    width: auto;
 }
 
-/* Línea inferior del título */
-.VPSidebarItem.level-0 > .item {
-    border-bottom: 2px solid transparent;
-    border-image: linear-gradient(
-            to right,
-            var(--sidebar-line-start),
-            var(--sidebar-line-middle) 55%,
-            var(--sidebar-line-end)
-    ) 1;
+/* Botón desplegable */
+.VPSidebarItem.level-1 > .item > .caret {
+    position: static;
+    width: 22px;
+    height: 22px;
+    flex: 0 0 22px;
+    margin: 0;
+    padding: 0;
 }
 
-/* Sangría de los elementos secundarios */
-.VPSidebarItem.level-0 > .items {
-    padding-left: var(--sidebar-indent) !important;
+/* Ocultar la flecha original */
+.VPSidebarItem.level-1 > .item > .caret .vpi-chevron-right {
+    display: none;
+}
+/* Triángulo discreto */
+.VPSidebarItem.level-1 > .item > .caret::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 6px solid #94a3b8;
+    transition: transform 0.2s;
 }
 
-/* Tamaño de los elementos secundarios */
-.VPSidebarItem.level-1 .sidebar-title {
-    font-size: var(--sidebar-item-size) !important;
-    line-height: var(--sidebar-item-line-height);
-    color: var(--sidebar-text);
+/* Desplegado: apunta hacia abajo */
+.VPSidebarItem.level-1:not(.collapsed) > .item > .caret::after {
+    transform: rotate(90deg);
 }
 
-/* Separación entre elementos */
-.VPSidebarItem.level-1 > .item {
-    padding: 4px 0;
-}
-:root {
-    --vp-sidebar-width: 260px;
+/*!* Nueva flecha *!*/
+/*.VPSidebarItem.level-1 > .item > .caret::after {*/
+/*    content: '❯';*/
+/*    display: inline-block;*/
+/*    font-size: 18px;*/
+/*    font-weight: 700;*/
+/*    color: #1D4ED8;*/
+/*    transition: transform 0.2s;*/
+/*}*/
+
+/*!* Girar al desplegar *!*/
+/*.VPSidebarItem.level-1.collapsed > .item > .caret::after {*/
+/*    transform: rotate(0deg);*/
+/*}*/
+
+/*.VPSidebarItem.level-1:not(.collapsed) > .item > .caret::after {*/
+/*    transform: rotate(90deg);*/
+/*}*/
+
+/* ============================================================
+   9. SANGRÍA DE LOS HIJOS
+   ============================================================ */
+
+/* Nivel 2: Selectivas, Repetitivas... */
+.VPSidebarItem.level-2 > .item {
+    padding-left: var(--sidebar-children-indent) !important;
 }

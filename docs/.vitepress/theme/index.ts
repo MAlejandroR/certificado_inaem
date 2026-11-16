@@ -1,5 +1,6 @@
 import DefaultTheme from 'vitepress/theme'
 import Markmap from './components/Markmap.vue'
+import Layout from './Layout.vue'
 import 'devicon/devicon.min.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import './custom.css'
@@ -24,9 +25,11 @@ import Ejercicio  from "./components/ejercicios/Ejercicio.vue";
 import TituloEjercicio  from "./components/ejercicios/TituloEjercicio.vue";
 import PhpRunner from "./components/PhpRunner.vue";
 import VisitorCount from "./components/VisitorCount.vue";
+import EnConstruccion from "./components/EnConstruccion.vue";
 
 export default {
   extends: DefaultTheme,
+    Layout,
   enhanceApp({ app }) {
     app.component('Markmap', Markmap)
     app.component('IndiceCurso', IndiceCurso)
@@ -42,5 +45,6 @@ export default {
     app.component('TituloEjercicio', TituloEjercicio)
     app.component('PhpRunner', PhpRunner)
     app.component('VisitorCount', VisitorCount);
+    app.component('EnConstruccion',EnConstruccion);
   }
 }

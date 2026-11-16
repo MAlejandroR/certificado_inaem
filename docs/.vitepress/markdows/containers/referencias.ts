@@ -1,10 +1,10 @@
 import type MarkdownIt from 'markdown-it'
-import { crearContainer } from '../crearContainer'
+import { old_crearContainer } from '../old_crearContainer'
 
 export function registrarReferencias(md: MarkdownIt) {
-    crearContainer(md, {
+    old_crearContainer(md, {
         nombre: 'referencias',
         titulo: 'Dónde buscar información',
-        icono: 'fa-solid fa-globe'
+        icono: 'fa-solid fa-link'
     })
 }

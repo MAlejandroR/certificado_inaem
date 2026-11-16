@@ -1,0 +1,1 @@
+import"./chunks/framework.YHAu34vx.js";import{r as e,s as o}from"./scratch_ejemplos_ejercicios_Ejercicio01_index.md.DoT8IEzm.js";export{e as __pageData,o as default};

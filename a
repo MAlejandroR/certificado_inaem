@@ -1,0 +1,602 @@
+
+> curso-inaem@1.0.0 docs:build
+> vitepress build docs
+
+
+  vitepress v1.6.4
+
+Archivos encontrados: [
+  '../../../../04_Scratch/Ejemplos/ejercicios/Ejercicio01/index.md',
+  '../../../../04_php/16_ejercicios/secuenciales/ejercicio01/index.md',
+  '../../../../04_php/16_ejercicios/secuenciales/ejercicio02/index.md',
+  '../../../../04_php/16_ejercicios/secuenciales/ejercicio03/index.md',
+  '../../../../04_php/16_ejercicios/secuenciales/ejercicio04/index.md',
+  '../../../../04_php/16_ejercicios/secuenciales/ejercicio05/index.md',
+  '../../../../04_php/16_ejercicios/secuenciales/ejercicio06/index.md',
+  '../../../../04_php/16_ejercicios/secuenciales/ejercicio07/index.md',
+  '../../../../04_php/16_ejercicios/selectivos/ejercicio08/index.md',
+  '../../../../04_php/16_ejercicios/selectivos/ejercicio09/index.md',
+  '../../../../04_php/16_ejercicios/selectivos/ejercicio10/index.md',
+  '../../../../04_php/16_ejercicios/selectivos/ejercicio11/index.md',
+  '../../../../04_php/16_ejercicios/selectivos/ejercicio12/index.md'
+]
+Primer módulo: [Object: null prototype] [Module] {
+  __pageData: {
+    title: '',
+    description: '',
+    frontmatter: {
+      id: 'scratch-001',
+      titulo: 'El laberinto de las manzanas',
+      tema: 'scratch',
+      icon: 'fa-solid fa-cat',
+      orden: 1
+    },
+    headers: [],
+    relativePath: 'scratch/ejemplos/ejercicios/Ejercicio01/index.md',
+    filePath: '04_Scratch/Ejemplos/ejercicios/Ejercicio01/index.md'
+  },
+  default: {
+    name: 'scratch/ejemplos/ejercicios/Ejercicio01/index.md',
+    setup: [Function (anonymous)],
+    ssrRender: [Function: _sfc_ssrRender]
+  }
+}
+┌─────────┐
+│ (index) │
+├─────────┤
+└─────────┘
+Catálogo de ejercicios: Map(13) {
+  'scratch-001' => {
+    id: 'scratch-001',
+    titulo: 'El laberinto de las manzanas',
+    tema: 'scratch',
+    orden: 1,
+    ruta: '../../../../04_Scratch/Ejemplos/ejercicios/Ejercicio01/index.md',
+    icon: 'fa-solid fa-cat',
+    url: 'scratch/ejemplos/ejercicios/Ejercicio01/index.md',
+    componente: {
+      name: 'scratch/ejemplos/ejercicios/Ejercicio01/index.md',
+      setup: [Function (anonymous)],
+      ssrRender: [Function: _sfc_ssrRender]
+    },
+    solucion: null,
+    mostrarCodigo: false
+  },
+  'php-sec-001' => {
+    id: 'php-sec-001',
+    titulo: 'Mi primer programa con echo',
+    tema: 'secuenciales',
+    orden: 1,
+    ruta: '../../../../04_php/16_ejercicios/secuenciales/ejercicio01/index.md',
+    icon: 'fa-solid fa-code',
+    url: 'php/ejercicios/secuenciales/ejercicio01/index.md',
+    componente: {
+      name: 'php/ejercicios/secuenciales/ejercicio01/index.md',
+      setup: [Function (anonymous)],
+      ssrRender: [Function: _sfc_ssrRender]
+    },
+    solucion: 'index.php',
+    mostrarCodigo: true
+  },
+  'php-sec-002' => {
+    id: 'php-sec-002',
+    titulo: 'Mi tarjeta de presentación',
+    tema: 'secuenciales',
+    orden: 2,
+    ruta: '../../../../04_php/16_ejercicios/secuenciales/ejercicio02/index.md',
+    icon: 'fa-solid fa-code',
+    url: 'php/ejercicios/secuenciales/ejercicio02/index.md',
+    componente: {
+      name: 'php/ejercicios/secuenciales/ejercicio02/index.md',
+      setup: [Function (anonymous)],
+      ssrRender: [Function: _sfc_ssrRender]
+    },
+    solucion: null,
+    mostrarCodigo: false
+  },
+  'php-sec-003' => {
+    id: 'php-sec-003',
+    titulo: 'Probando printf',
+    tema: 'secuenciales',
+    orden: 3,
+    ruta: '../../../../04_php/16_ejercicios/secuenciales/ejercicio03/index.md',
+    icon: 'fa-solid fa-code',
+    url: 'php/ejercicios/secuenciales/ejercicio03/index.md',
+    componente: {
+      name: 'php/ejercicios/secuenciales/ejercicio03/index.md',
+      setup: [Function (anonymous)],
+      ssrRender: [Function: _sfc_ssrRender]
+    },
+    solucion: 'index.php',
+    mostrarCodigo: true
+  },
+  'php-sec-004' => {
+    id: 'php-sec-004',
+    titulo: 'Probando sprintf',
+    tema: 'secuenciales',
+    orden: 4,
+    ruta: '../../../../04_php/16_ejercicios/secuenciales/ejercicio04/index.md',
+    icon: 'fa-solid fa-code',
+    url: 'php/ejercicios/secuenciales/ejercicio04/index.md',
+    componente: {
+      name: 'php/ejercicios/secuenciales/ejercicio04/index.md',
+      setup: [Function (anonymous)],
+      ssrRender: [Function: _sfc_ssrRender]
+    },
+    solucion: 'index.php',
+    mostrarCodigo: false
+  },
+  'php-sec-005' => {
+    id: 'php-sec-005',
+    titulo: 'Probando sprintf',
+    tema: 'secuenciales',
+    orden: 4,
+    ruta: '../../../../04_php/16_ejercicios/secuenciales/ejercicio05/index.md',
+    icon: 'fa-solid fa-code',
+    url: 'php/ejercicios/secuenciales/ejercicio05/index.md',
+    componente: {
+      name: 'php/ejercicios/secuenciales/ejercicio05/index.md',
+      setup: [Function (anonymous)],
+      ssrRender: [Function: _sfc_ssrRender]
+    },
+    solucion: 'index.php',
+    mostrarCodigo: false
+  },
+  'php-sec-006' => {
+    id: 'php-sec-006',
+    titulo: 'Tipos de datos de las variables',
+    tema: 'secuenciales',
+    orden: 6,
+    ruta: '../../../../04_php/16_ejercicios/secuenciales/ejercicio06/index.md',
+    icon: 'fa-solid fa-box',
+    url: 'php/ejercicios/secuenciales/ejercicio06/index.md',
+    componente: {
+      name: 'php/ejercicios/secuenciales/ejercicio06/index.md',
+      setup: [Function (anonymous)],
+      ssrRender: [Function: _sfc_ssrRender]
+    },
+    solucion: 'index.php',
+    mostrarCodigo: false
+  },
+  'php-sec-007' => {
+    id: 'php-sec-007',
+    titulo: 'Probando funciones is_xxx()',
+    tema: 'secuenciales',
+    orden: 7,
+    ruta: '../../../../04_php/16_ejercicios/secuenciales/ejercicio07/index.md',
+    icon: 'fa-solid fa-circle-check',
+    url: 'php/ejercicios/secuenciales/ejercicio07/index.md',
+    componente: {
+      name: 'php/ejercicios/secuenciales/ejercicio07/index.md',
+      setup: [Function (anonymous)],
+      ssrRender: [Function: _sfc_ssrRender]
+    },
+    solucion: 'index.php',
+    mostrarCodigo: false
+  },
+  'php-selectivo-008' => {
+    id: 'php-selectivo-008',
+    titulo: 'Selección simple - Menor de edad',
+    tema: 'selectivos',
+    orden: 8,
+    ruta: '../../../../04_php/16_ejercicios/selectivos/ejercicio08/index.md',
+    icon: 'fa-solid fa-user-clock',
+    url: 'php/ejercicios/selectivos/ejercicio08/index.md',
+    componente: {
+      name: 'php/ejercicios/selectivos/ejercicio08/index.md',
+      setup: [Function (anonymous)],
+      ssrRender: [Function: _sfc_ssrRender]
+    },
+    solucion: 'index.php',
+    mostrarCodigo: false
+  },
+  'php-selectivo-009' => {
+    id: 'php-selectivo-009',
+    titulo: 'Selección simple',
+    tema: 'selectivos',
+    orden: 7,
+    ruta: '../../../../04_php/16_ejercicios/selectivos/ejercicio09/index.md',
+    icon: 'fa-solid fa-circle-check',
+    url: 'php/ejercicios/selectivos/ejercicio09/index.md',
+    componente: {
+      name: 'php/ejercicios/selectivos/ejercicio09/index.md',
+      setup: [Function (anonymous)],
+      ssrRender: [Function: _sfc_ssrRender]
+    },
+    solucion: 'index.php',
+    mostrarCodigo: false
+  },
+  'php-selectivo-010' => {
+    id: 'php-selectivo-010',
+    titulo: 'Control de temperatura',
+    tema: 'selectivos',
+    orden: 9,
+    ruta: '../../../../04_php/16_ejercicios/selectivos/ejercicio10/index.md',
+    icon: 'fa-solid fa-temperature-half',
+    url: 'php/ejercicios/selectivos/ejercicio10/index.md',
+    componente: {
+      name: 'php/ejercicios/selectivos/ejercicio10/index.md',
+      setup: [Function (anonymous)],
+      ssrRender: [Function: _sfc_ssrRender]
+    },
+    solucion: 'index.php',
+    mostrarCodigo: false
+  },
+  'php-selectivo-011' => {
+    id: 'php-selectivo-011',
+    titulo: 'Radar de velocidad',
+    tema: 'selectivos',
+    orden: 11,
+    ruta: '../../../../04_php/16_ejercicios/selectivos/ejercicio11/index.md',
+    icon: 'fa-solid fa-gauge-high',
+    url: 'php/ejercicios/selectivos/ejercicio11/index.md',
+    componente: {
+      name: 'php/ejercicios/selectivos/ejercicio11/index.md',
+      setup: [Function (anonymous)],
+      ssrRender: [Function: _sfc_ssrRender]
+    },
+    solucion: 'index.php',
+    mostrarCodigo: false
+  },
+  'php-selectivo-012' => {
+    id: 'php-selectivo-012',
+    titulo: 'Acceso a una atracción',
+    tema: 'selectivos',
+    orden: 12,
+    ruta: '../../../../04_php/16_ejercicios/selectivos/ejercicio12/index.md',
+    icon: 'fa-solid fa-ticket',
+    url: 'php/ejercicios/selectivos/ejercicio12/index.md',
+    componente: {
+      name: 'php/ejercicios/selectivos/ejercicio12/index.md',
+      setup: [Function (anonymous)],
+      ssrRender: [Function: _sfc_ssrRender]
+    },
+    solucion: 'index.php',
+    mostrarCodigo: false
+  }
+}
+Número de ejercicios: 13
+ID solicitado: scratch-001
+Ejercicio encontrado: {
+  id: 'scratch-001',
+  titulo: 'El laberinto de las manzanas',
+  tema: 'scratch',
+  orden: 1,
+  ruta: '../../../../04_Scratch/Ejemplos/ejercicios/Ejercicio01/index.md',
+  icon: 'fa-solid fa-cat',
+  url: 'scratch/ejemplos/ejercicios/Ejercicio01/index.md',
+  componente: {
+    name: 'scratch/ejemplos/ejercicios/Ejercicio01/index.md',
+    setup: [Function (anonymous)],
+    ssrRender: [Function: _sfc_ssrRender]
+  },
+  solucion: null,
+  mostrarCodigo: false
+}
+ID solicitado: php-sec-004
+Ejercicio encontrado: {
+  id: 'php-sec-004',
+  titulo: 'Probando sprintf',
+  tema: 'secuenciales',
+  orden: 4,
+  ruta: '../../../../04_php/16_ejercicios/secuenciales/ejercicio04/index.md',
+  icon: 'fa-solid fa-code',
+  url: 'php/ejercicios/secuenciales/ejercicio04/index.md',
+  componente: {
+    name: 'php/ejercicios/secuenciales/ejercicio04/index.md',
+    setup: [Function (anonymous)],
+    ssrRender: [Function: _sfc_ssrRender]
+  },
+  solucion: 'index.php',
+  mostrarCodigo: false
+}
+ID solicitado: php-sec-001
+Ejercicio encontrado: {
+  id: 'php-sec-001',
+  titulo: 'Mi primer programa con echo',
+  tema: 'secuenciales',
+  orden: 1,
+  ruta: '../../../../04_php/16_ejercicios/secuenciales/ejercicio01/index.md',
+  icon: 'fa-solid fa-code',
+  url: 'php/ejercicios/secuenciales/ejercicio01/index.md',
+  componente: {
+    name: 'php/ejercicios/secuenciales/ejercicio01/index.md',
+    setup: [Function (anonymous)],
+    ssrRender: [Function: _sfc_ssrRender]
+  },
+  solucion: 'index.php',
+  mostrarCodigo: true
+}
+ID solicitado: php-sec-002
+Ejercicio encontrado: {
+  id: 'php-sec-002',
+  titulo: 'Mi tarjeta de presentación',
+  tema: 'secuenciales',
+  orden: 2,
+  ruta: '../../../../04_php/16_ejercicios/secuenciales/ejercicio02/index.md',
+  icon: 'fa-solid fa-code',
+  url: 'php/ejercicios/secuenciales/ejercicio02/index.md',
+  componente: {
+    name: 'php/ejercicios/secuenciales/ejercicio02/index.md',
+    setup: [Function (anonymous)],
+    ssrRender: [Function: _sfc_ssrRender]
+  },
+  solucion: null,
+  mostrarCodigo: false
+}
+ID solicitado: php-sec-003
+Ejercicio encontrado: {
+  id: 'php-sec-003',
+  titulo: 'Probando printf',
+  tema: 'secuenciales',
+  orden: 3,
+  ruta: '../../../../04_php/16_ejercicios/secuenciales/ejercicio03/index.md',
+  icon: 'fa-solid fa-code',
+  url: 'php/ejercicios/secuenciales/ejercicio03/index.md',
+  componente: {
+    name: 'php/ejercicios/secuenciales/ejercicio03/index.md',
+    setup: [Function (anonymous)],
+    ssrRender: [Function: _sfc_ssrRender]
+  },
+  solucion: 'index.php',
+  mostrarCodigo: true
+}
+ID solicitado: php-sec-004
+Ejercicio encontrado: {
+  id: 'php-sec-004',
+  titulo: 'Probando sprintf',
+  tema: 'secuenciales',
+  orden: 4,
+  ruta: '../../../../04_php/16_ejercicios/secuenciales/ejercicio04/index.md',
+  icon: 'fa-solid fa-code',
+  url: 'php/ejercicios/secuenciales/ejercicio04/index.md',
+  componente: {
+    name: 'php/ejercicios/secuenciales/ejercicio04/index.md',
+    setup: [Function (anonymous)],
+    ssrRender: [Function: _sfc_ssrRender]
+  },
+  solucion: 'index.php',
+  mostrarCodigo: false
+}
+ID solicitado: php-sec-006
+Ejercicio encontrado: {
+  id: 'php-sec-006',
+  titulo: 'Tipos de datos de las variables',
+  tema: 'secuenciales',
+  orden: 6,
+  ruta: '../../../../04_php/16_ejercicios/secuenciales/ejercicio06/index.md',
+  icon: 'fa-solid fa-box',
+  url: 'php/ejercicios/secuenciales/ejercicio06/index.md',
+  componente: {
+    name: 'php/ejercicios/secuenciales/ejercicio06/index.md',
+    setup: [Function (anonymous)],
+    ssrRender: [Function: _sfc_ssrRender]
+  },
+  solucion: 'index.php',
+  mostrarCodigo: false
+}
+ID solicitado: php-sec-007
+Ejercicio encontrado: {
+  id: 'php-sec-007',
+  titulo: 'Probando funciones is_xxx()',
+  tema: 'secuenciales',
+  orden: 7,
+  ruta: '../../../../04_php/16_ejercicios/secuenciales/ejercicio07/index.md',
+  icon: 'fa-solid fa-circle-check',
+  url: 'php/ejercicios/secuenciales/ejercicio07/index.md',
+  componente: {
+    name: 'php/ejercicios/secuenciales/ejercicio07/index.md',
+    setup: [Function (anonymous)],
+    ssrRender: [Function: _sfc_ssrRender]
+  },
+  solucion: 'index.php',
+  mostrarCodigo: false
+}
+ID solicitado: php-arrays-001
+Ejercicio encontrado: undefined
+ID solicitado: php-arrays-002
+Ejercicio encontrado: undefined
+ID solicitado: php-arrays-003
+Ejercicio encontrado: undefined
+ID solicitado: php-arrays-004
+Ejercicio encontrado: undefined
+ID solicitado: php-arrays-005
+Ejercicio encontrado: undefined
+ID solicitado: php-arrays-006
+Ejercicio encontrado: undefined
+ID solicitado: php-arrays-007
+Ejercicio encontrado: undefined
+ID solicitado: php-arrays-008
+Ejercicio encontrado: undefined
+ID solicitado: php-arrays-009
+Ejercicio encontrado: undefined
+ID solicitado: formularios-xss-001
+Ejercicio encontrado: undefined
+ID solicitado: php-sec-001
+Ejercicio encontrado: {
+  id: 'php-sec-001',
+  titulo: 'Mi primer programa con echo',
+  tema: 'secuenciales',
+  orden: 1,
+  ruta: '../../../../04_php/16_ejercicios/secuenciales/ejercicio01/index.md',
+  icon: 'fa-solid fa-code',
+  url: 'php/ejercicios/secuenciales/ejercicio01/index.md',
+  componente: {
+    name: 'php/ejercicios/secuenciales/ejercicio01/index.md',
+    setup: [Function (anonymous)],
+    ssrRender: [Function: _sfc_ssrRender]
+  },
+  solucion: 'index.php',
+  mostrarCodigo: true
+}
+ID solicitado: php-sec-002
+Ejercicio encontrado: {
+  id: 'php-sec-002',
+  titulo: 'Mi tarjeta de presentación',
+  tema: 'secuenciales',
+  orden: 2,
+  ruta: '../../../../04_php/16_ejercicios/secuenciales/ejercicio02/index.md',
+  icon: 'fa-solid fa-code',
+  url: 'php/ejercicios/secuenciales/ejercicio02/index.md',
+  componente: {
+    name: 'php/ejercicios/secuenciales/ejercicio02/index.md',
+    setup: [Function (anonymous)],
+    ssrRender: [Function: _sfc_ssrRender]
+  },
+  solucion: null,
+  mostrarCodigo: false
+}
+ID solicitado: php-sec-003
+Ejercicio encontrado: {
+  id: 'php-sec-003',
+  titulo: 'Probando printf',
+  tema: 'secuenciales',
+  orden: 3,
+  ruta: '../../../../04_php/16_ejercicios/secuenciales/ejercicio03/index.md',
+  icon: 'fa-solid fa-code',
+  url: 'php/ejercicios/secuenciales/ejercicio03/index.md',
+  componente: {
+    name: 'php/ejercicios/secuenciales/ejercicio03/index.md',
+    setup: [Function (anonymous)],
+    ssrRender: [Function: _sfc_ssrRender]
+  },
+  solucion: 'index.php',
+  mostrarCodigo: true
+}
+ID solicitado: php-sec-004
+Ejercicio encontrado: {
+  id: 'php-sec-004',
+  titulo: 'Probando sprintf',
+  tema: 'secuenciales',
+  orden: 4,
+  ruta: '../../../../04_php/16_ejercicios/secuenciales/ejercicio04/index.md',
+  icon: 'fa-solid fa-code',
+  url: 'php/ejercicios/secuenciales/ejercicio04/index.md',
+  componente: {
+    name: 'php/ejercicios/secuenciales/ejercicio04/index.md',
+    setup: [Function (anonymous)],
+    ssrRender: [Function: _sfc_ssrRender]
+  },
+  solucion: 'index.php',
+  mostrarCodigo: false
+}
+ID solicitado: php-sec-006
+Ejercicio encontrado: {
+  id: 'php-sec-006',
+  titulo: 'Tipos de datos de las variables',
+  tema: 'secuenciales',
+  orden: 6,
+  ruta: '../../../../04_php/16_ejercicios/secuenciales/ejercicio06/index.md',
+  icon: 'fa-solid fa-box',
+  url: 'php/ejercicios/secuenciales/ejercicio06/index.md',
+  componente: {
+    name: 'php/ejercicios/secuenciales/ejercicio06/index.md',
+    setup: [Function (anonymous)],
+    ssrRender: [Function: _sfc_ssrRender]
+  },
+  solucion: 'index.php',
+  mostrarCodigo: false
+}
+ID solicitado: php-sec-007
+Ejercicio encontrado: {
+  id: 'php-sec-007',
+  titulo: 'Probando funciones is_xxx()',
+  tema: 'secuenciales',
+  orden: 7,
+  ruta: '../../../../04_php/16_ejercicios/secuenciales/ejercicio07/index.md',
+  icon: 'fa-solid fa-circle-check',
+  url: 'php/ejercicios/secuenciales/ejercicio07/index.md',
+  componente: {
+    name: 'php/ejercicios/secuenciales/ejercicio07/index.md',
+    setup: [Function (anonymous)],
+    ssrRender: [Function: _sfc_ssrRender]
+  },
+  solucion: 'index.php',
+  mostrarCodigo: false
+}
+ID solicitado: php-selectivo-008
+Ejercicio encontrado: {
+  id: 'php-selectivo-008',
+  titulo: 'Selección simple - Menor de edad',
+  tema: 'selectivos',
+  orden: 8,
+  ruta: '../../../../04_php/16_ejercicios/selectivos/ejercicio08/index.md',
+  icon: 'fa-solid fa-user-clock',
+  url: 'php/ejercicios/selectivos/ejercicio08/index.md',
+  componente: {
+    name: 'php/ejercicios/selectivos/ejercicio08/index.md',
+    setup: [Function (anonymous)],
+    ssrRender: [Function: _sfc_ssrRender]
+  },
+  solucion: 'index.php',
+  mostrarCodigo: false
+}
+ID solicitado: php-selectivo-009
+Ejercicio encontrado: {
+  id: 'php-selectivo-009',
+  titulo: 'Selección simple',
+  tema: 'selectivos',
+  orden: 7,
+  ruta: '../../../../04_php/16_ejercicios/selectivos/ejercicio09/index.md',
+  icon: 'fa-solid fa-circle-check',
+  url: 'php/ejercicios/selectivos/ejercicio09/index.md',
+  componente: {
+    name: 'php/ejercicios/selectivos/ejercicio09/index.md',
+    setup: [Function (anonymous)],
+    ssrRender: [Function: _sfc_ssrRender]
+  },
+  solucion: 'index.php',
+  mostrarCodigo: false
+}
+ID solicitado: php-selectivo-010
+Ejercicio encontrado: {
+  id: 'php-selectivo-010',
+  titulo: 'Control de temperatura',
+  tema: 'selectivos',
+  orden: 9,
+  ruta: '../../../../04_php/16_ejercicios/selectivos/ejercicio10/index.md',
+  icon: 'fa-solid fa-temperature-half',
+  url: 'php/ejercicios/selectivos/ejercicio10/index.md',
+  componente: {
+    name: 'php/ejercicios/selectivos/ejercicio10/index.md',
+    setup: [Function (anonymous)],
+    ssrRender: [Function: _sfc_ssrRender]
+  },
+  solucion: 'index.php',
+  mostrarCodigo: false
+}
+ID solicitado: php-selectivo-011
+Ejercicio encontrado: {
+  id: 'php-selectivo-011',
+  titulo: 'Radar de velocidad',
+  tema: 'selectivos',
+  orden: 11,
+  ruta: '../../../../04_php/16_ejercicios/selectivos/ejercicio11/index.md',
+  icon: 'fa-solid fa-gauge-high',
+  url: 'php/ejercicios/selectivos/ejercicio11/index.md',
+  componente: {
+    name: 'php/ejercicios/selectivos/ejercicio11/index.md',
+    setup: [Function (anonymous)],
+    ssrRender: [Function: _sfc_ssrRender]
+  },
+  solucion: 'index.php',
+  mostrarCodigo: false
+}
+ID solicitado: php-selectivo-012
+Ejercicio encontrado: {
+  id: 'php-selectivo-012',
+  titulo: 'Acceso a una atracción',
+  tema: 'selectivos',
+  orden: 12,
+  ruta: '../../../../04_php/16_ejercicios/selectivos/ejercicio12/index.md',
+  icon: 'fa-solid fa-ticket',
+  url: 'php/ejercicios/selectivos/ejercicio12/index.md',
+  componente: {
+    name: 'php/ejercicios/selectivos/ejercicio12/index.md',
+    setup: [Function (anonymous)],
+    ssrRender: [Function: _sfc_ssrRender]
+  },
+  solucion: 'index.php',
+  mostrarCodigo: false
+}
+build complete in 12.33s.
