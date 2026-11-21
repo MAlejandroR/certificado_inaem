@@ -70,7 +70,7 @@ export default withMermaid(
             toc: {
                 level: [1, 2, 3, 4],
             },
-
+            math: true,
         },
         rewrites: {
             '04_Scratch/index.md': 'scratch/index.md',
@@ -116,10 +116,12 @@ export default withMermaid(
                 'fundamentos-web/servidores/(.*)',
         },
         themeConfig: {
-            outline: {
-                label: "En esta página",
-                level: [2, 3]
-            },
+            //Menú de la derecha
+            // outline: {
+            //     label: "En esta página",
+            //     level: [2, 3]
+            // },
+            outline: false,
             siteTitle: '💻 Desarrollo Web',
             logo: '/images/logo-web-developer.png',
 

@@ -20,6 +20,7 @@ const props = defineProps({
 const isOpen = ref(props.open);
 
 //Calcular la url de la posible solución
+
 const urlSolucion = computed(() => {
   if (!ejercicio.value?.solucion) return null
 
@@ -28,8 +29,12 @@ const urlSolucion = computed(() => {
       ejercicio.value.url.lastIndexOf('/') + 1
   )
 
-  return withBase('/' + carpeta + ejercicio.value.solucion)
+  // Cambio temporal hasta corregir las rutas
+  const carpetaSolucion = carpeta.replace(/^php\//, '04_php/')
+
+  return withBase('/' + carpetaSolucion + ejercicio.value.solucion)
 })
+
 
 //Saber si podemos ver el código
 const mostrarFuente = ref(false);
@@ -57,10 +62,19 @@ console.log('Ejercicio encontrado:', ejercicio.value)
       <button class="ejercicio-title"
               :aria-expanded="isOpen"
               @click="isOpen = !isOpen">
+        <!-- Icono de desplegar -->
         <i
             :class="isOpen
-        ? 'fa-solid fa-chevron-down'
-        : 'fa-solid fa-chevron-right'"
+          ? 'fa-solid fa-chevron-down'
+          : 'fa-solid fa-chevron-right'"
+        ></i>
+
+        <!-- Icono del ejercicio -->
+        <i
+            v-if="ejercicio.icon"
+            :class="ejercicio.icon"
+            class="ejercicio-icono"
+            aria-hidden="true"
         ></i>
 
         <span class="ejercicio-numero">
@@ -290,5 +304,13 @@ console.log('Ejercicio encontrado:', ejercicio.value)
 :global(.dark) .ejercicio-fuente {
   background: #0f172a;
   color: #e2e8f0;
+}
+/* Icono propio de cada ejercicio */
+.ejercicio-title .ejercicio-icono {
+  color: #D97706;
+  font-size: 1.3rem;
+}
+:global(.dark) .ejercicio-title .ejercicio-icono {
+  color: #FBBF24;
 }
 </style>

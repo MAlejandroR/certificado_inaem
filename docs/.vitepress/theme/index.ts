@@ -22,6 +22,7 @@ import CmdPane from './components/CmdPane.vue'
 import CollapsibleHeading from "./components/CollapsibleHeading.vue";
 import ScratchBlocks from './components/ScratchBlocks.vue'
 import Ejercicio  from "./components/ejercicios/Ejercicio.vue";
+import ListadoEjercicios  from "./components/ejercicios/ListadoEjercicios.vue";
 import TituloEjercicio  from "./components/ejercicios/TituloEjercicio.vue";
 import PhpRunner from "./components/PhpRunner.vue";
 import VisitorCount from "./components/VisitorCount.vue";
@@ -42,6 +43,7 @@ export default {
     app.component('CollapsibleHeading',CollapsibleHeading)
     app.component('ScratchBlocks', ScratchBlocks)
     app.component('Ejercicio', Ejercicio)
+    app.component('ListadoEjercicios', ListadoEjercicios)
     app.component('TituloEjercicio', TituloEjercicio)
     app.component('PhpRunner', PhpRunner)
     app.component('VisitorCount', VisitorCount);

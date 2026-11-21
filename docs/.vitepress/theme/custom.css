@@ -1192,3 +1192,12 @@ html { overflow-anchor: none; }
     }
   }
 }
+
+/* Ampliar el contenido principal */
+.VPDoc.has-sidebar .content {
+    max-width: none;
+}
+
+.VPDoc .content-container {
+    max-width: none;
+}
