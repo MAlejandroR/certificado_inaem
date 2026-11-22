@@ -1,6 +1,11 @@
 <script setup>
+import TecnologiasCurso from '../../../../../arquitectura/comun/theme/components/TecnologiasCurso.vue'
+import SalidasProfesionales from '../../../../../arquitectura/comun/theme/components/SalidasProfesionales.vue'
+
+import VentajasCurso from '../../../../../arquitectura/comun/theme/components/VentajasCurso.vue'
+import FichaCurso from '../../../../../arquitectura/comun/theme/components/FichaCurso.vue'
 import Calendario from './Calendario.vue'
-import RequestJourney  from "./RequestJourney.vue";
+import RequestJourney from '../../../../../arquitectura/comun/theme/components/RequestJourney.vue'
 import Docentes from './Docentes.vue';
 import {withBase} from 'vitepress';
 import Footer from "./Footer.vue";
@@ -126,19 +131,10 @@ const salidas = [
       </section>
 
       <!-- VENTAJAS -->
-      <section class="advantages">
-        <div v-for="item in ventajas" :key="item.title" class="advantage">
-          <i :class="item.icon" aria-hidden="true"></i><span>{{ item.title }}</span>
-        </div>
-      </section>
+      <VentajasCurso :ventajas="ventajas" />
 
       <!-- FICHA DEL CURSO -->
-      <section class="course-facts">
-        <div v-for="item in datos" :key="item.label" class="fact">
-          <i :class="item.icon" aria-hidden="true"></i>
-          <div><small>{{ item.label }}</small><strong>{{ item.value }}</strong></div>
-        </div>
-      </section>
+      <FichaCurso :datos="datos" />
 
       <!-- CURSO, TECNOLOGÍAS Y SALIDAS -->
       <section id="el-curso" class="course-content">
@@ -147,31 +143,17 @@ const salidas = [
           <h2>Una formación completa para tu futuro profesional</h2>
           <p>Adquiere los conocimientos y habilidades necesarios para desarrollar aplicaciones web modernas, desde los fundamentos de programación hasta su despliegue en entornos profesionales.</p>
         </div>
-        <div id="tecnologias" class="course-technologies">
-          <span class="section-kicker">TECNOLOGÍAS</span>
-          <div class="tech-grid">
-            <a
-                v-for="tech in tecnologias"
-                :key="tech.name"
-                :href="tech.url"
-                class="tech-card"
-                target="_blank"
-                rel="noopener noreferrer"
-                :title="`Visitar la web de ${tech.name}`"
-            >
-              <i :class="tech.icon" aria-hidden="true"></i>
-              <span>{{ tech.name }}</span>
-            </a>
-          </div>
-        </div>
-        <div id="salidas-profesionales" class="career-content">
-          <span class="section-kicker">SALIDAS PROFESIONALES</span>
-          <h2>Un sector con futuro</h2>
-          <ul>
-            <li v-for="salida in salidas" :key="salida"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> {{ salida }}</li>
-          </ul>
-          <img src="/images/equipo.jpg" alt="Profesionales colaborando en un proyecto" class="career-image" loading="lazy" />
-        </div>
+        <TecnologiasCurso :tecnologias="tecnologias" />
+        <SalidasProfesionales :salidas="salidas">
+          <template #imagen>
+            <img
+              src="/images/equipo.jpg"
+              alt="Profesionales colaborando en un proyecto"
+              class="career-image"
+              loading="lazy"
+            />
+          </template>
+        </SalidasProfesionales>
       </section>
 
       <!-- VIAJE DE UNA PETICIÓN WEB -->

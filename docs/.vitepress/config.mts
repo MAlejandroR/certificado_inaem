@@ -1,7 +1,4 @@
-import {defineConfig} from 'vitepress'
-
-import {withMermaid} from 'vitepress-plugin-mermaid'
-import {dawsContainers} from './markdows/index'
+import { crearConfiguracion } from '../../../arquitectura/comun/config/crearConfiguracion'
 import {hugoCompatPlugin} from './hugo-compat'
 import {full as emoji} from 'markdown-it-emoji'
 import { sidebarProgramacion } from './sidebar/programacion'
@@ -11,27 +8,22 @@ import {phpRewrites} from './rewrites/08_php';
 import { scratchblocksPlugin } from './markdows/scratchblocks'
 import {icon} from "./sidebar/utils";
 import path from 'node:path'
-import footnote from 'markdown-it-footnote'
 import {fetchVisitCount, goatCounter} from './site'
 
 const dawsVisitCount = await fetchVisitCount()
 
 
 
-export default withMermaid(
-    defineConfig({
+export default crearConfiguracion({
+        configUrl: import.meta.url,
 
 
         // base: '/certificado/',
-        lang: 'es-ES',
         title: 'Desarrollo Web | INAEM',
         description: 'Curso de desarrollo web ',
 
         cleanUrls: true,
-        mermaid: {
-            theme: 'default'
-        },
-        vite: {
+        opcionesVite: {
             define: {
                 __DAWS_VISIT_COUNT__: JSON.stringify(dawsVisitCount),
             },
@@ -46,7 +38,7 @@ export default withMermaid(
                         path.resolve(__dirname, '..'),
 
                         // Añade la ruta absoluta hacia donde apuntan tus enlaces simbólicos
-                        path.resolve(__dirname, '../../../apuntes/php/docs/php'),
+                        path.resolve(__dirname, '../../../php'),
                     ]
                 }
         },
@@ -57,14 +49,12 @@ export default withMermaid(
                 ]
             }
         },
-        markdown: {
+        opcionesMarkdown: {
             lineNumbers: true,
             config(md) {
-                dawsContainers(md);
                 md.use(hugoCompatPlugin);
                 md.use(emoji)
                 md.use(scratchblocksPlugin)
-                md.use(footnote)
 
             },
             toc: {
@@ -115,7 +105,7 @@ export default withMermaid(
             '02_fundamentos_web/07_servidores_web/(.*)':
                 'fundamentos-web/servidores/(.*)',
         },
-        themeConfig: {
+        opcionesTema: {
             //Menú de la derecha
             // outline: {
             //     label: "En esta página",
@@ -270,5 +260,4 @@ export default withMermaid(
             }
 
         }
-    }),
-)
+    })

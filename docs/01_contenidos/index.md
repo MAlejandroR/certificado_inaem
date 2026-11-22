@@ -6,4 +6,5 @@ pageClass: pagina-contenidos
 
 # Contenidos del curso
 
+
 <IndiceCurso />

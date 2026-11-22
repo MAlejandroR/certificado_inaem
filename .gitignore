@@ -1,0 +1,9 @@
+# VitePress
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+
+# Dependencias
+node_modules/
+
+# Copias temporales
+*.bak
