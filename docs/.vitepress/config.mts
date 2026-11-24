@@ -24,6 +24,7 @@ export default crearConfiguracion({
 
         cleanUrls: true,
         opcionesVite: {
+
             define: {
                 __DAWS_VISIT_COUNT__: JSON.stringify(dawsVisitCount),
             },

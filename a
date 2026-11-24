@@ -1,483 +1,127 @@
-En la rama v2
-Cambios a ser confirmados:
-  (usa "git restore --staged <archivo>..." para sacar del área de stage)
-	nuevos archivos: docs/ejercicios-php
 
-Cambios no rastreados para el commit:
-  (usa "git add/rm <archivo>..." para actualizar a lo que se le va a hacer commit)
-  (usa "git restore <archivo>..." para descartar los cambios en el directorio de trabajo)
-	modificados:     .idea/modules.xml
-	modificados:     .idea/workspace.xml
-	modificados:     a
-	modificados:     docs/.vitepress/dist/01_Presentacion/02_Modulos/01_Vision_general/index.html
-	modificados:     docs/.vitepress/dist/01_Presentacion/02_Modulos/01_Vision_general/index/index.html
-	modificados:     docs/.vitepress/dist/01_Presentacion/02_Modulos/cliente/_index.html
-	modificados:     docs/.vitepress/dist/01_Presentacion/02_Modulos/cliente/juanda/index.html
-	modificados:     docs/.vitepress/dist/01_Presentacion/02_Modulos/cliente/oscar/index.html
-	modificados:     docs/.vitepress/dist/01_Presentacion/02_Modulos/index.html
-	modificados:     docs/.vitepress/dist/01_Presentacion/02_Modulos/servicios/_index.html
-	modificados:     docs/.vitepress/dist/01_Presentacion/02_Modulos/servicios/nacho/index.html
-	modificados:     docs/.vitepress/dist/01_Presentacion/02_Modulos/servicios/oscar/index.html
-	modificados:     docs/.vitepress/dist/01_Presentacion/02_Modulos/servidor/_index.html
-	modificados:     docs/.vitepress/dist/01_Presentacion/02_Modulos/servidor/manuel/index.html
-	modificados:     docs/.vitepress/dist/01_Presentacion/02_Modulos/servidor/silvia/index.html
-	modificados:     docs/.vitepress/dist/01_Presentacion/02_Motivacion/index.html
-	modificados:     docs/.vitepress/dist/01_Presentacion/index.html
-	modificados:     docs/.vitepress/dist/01_contenidos/index.html
-	modificados:     docs/.vitepress/dist/02_Web_old/01_www/index.html
-	modificados:     docs/.vitepress/dist/02_Web_old/02_redes/01_osi/index.html
-	modificados:     docs/.vitepress/dist/02_Web_old/02_redes/index.html
-	modificados:     docs/.vitepress/dist/02_Web_old/03_linux/index.html
-	modificados:     docs/.vitepress/dist/02_Web_old/04_instalaciones/apache/index.html
-	modificados:     docs/.vitepress/dist/02_Web_old/04_instalaciones/apache/practica/index.html
-	modificados:     docs/.vitepress/dist/02_Web_old/04_instalaciones/index.html
-	modificados:     docs/.vitepress/dist/02_Web_old/06_http_https/index.html
-	modificados:     docs/.vitepress/dist/02_Web_old/07_servidores_web/index.html
-	modificados:     docs/.vitepress/dist/02_Web_old/07_servidores_web/practica/index.html
-	modificados:     docs/.vitepress/dist/02_Web_old/index.html
-	modificados:     docs/.vitepress/dist/03_Programacion/01_conceptos/index.html
-	modificados:     docs/.vitepress/dist/03_Programacion/05_Scratch/01_Introduccion/index.html
-	modificados:     docs/.vitepress/dist/03_Programacion/05_Scratch/02_Scratch/index.html
-	modificados:     docs/.vitepress/dist/03_Programacion/05_Scratch/03_Programando_Scratch/index.html
-	modificados:     docs/.vitepress/dist/03_Programacion/05_Scratch/03_Secuenciales/index.html
-	modificados:     docs/.vitepress/dist/03_Programacion/05_Scratch/04_Selectivas/index.html
-	modificados:     docs/.vitepress/dist/03_Programacion/05_Scratch/05_Repetitivas/index.html
-	modificados:     docs/.vitepress/dist/03_Programacion/05_Scratch/Ejemplos/index.html
-	modificados:     docs/.vitepress/dist/03_Programacion/05_Scratch/index.html
-	modificados:     docs/.vitepress/dist/03_Programacion/index.html
-	modificados:     docs/.vitepress/dist/04_Scratch/05_Scratch/02_Scratch/index.html
-	modificados:     docs/.vitepress/dist/04_Scratch/05_Scratch/03_Programando_Scratch/index.html
-	modificados:     docs/.vitepress/dist/04_Scratch/05_Scratch/03_Secuenciales/index.html
-	modificados:     docs/.vitepress/dist/04_Scratch/05_Scratch/04_Selectivas/index.html
-	modificados:     docs/.vitepress/dist/04_Scratch/05_Scratch/05_Repetitivas/index.html
-	modificados:     docs/.vitepress/dist/04_Scratch/05_Scratch/Ejemplos/index.html
-	modificados:     docs/.vitepress/dist/04_Scratch/05_Scratch/index.html
-	modificados:     docs/.vitepress/dist/04_php/100_proyecto_ia/enunciado.html
-	modificados:     docs/.vitepress/dist/04_php/100_proyecto_ia/index.html
-	modificados:     docs/.vitepress/dist/04_php/100_proyecto_ia/prompt_cursor/1.html
-	modificados:     docs/.vitepress/dist/04_php/100_proyecto_ia/prompt_cursor/2.html
-	modificados:     docs/.vitepress/dist/04_php/13_1_composer/index.html
-	modificados:     docs/.vitepress/dist/06_Laravel/01_conceptos/index.html
-	modificados:     docs/.vitepress/dist/06_Laravel/05_Scratch/01_Introduccion/_index.html
-	modificados:     docs/.vitepress/dist/06_Laravel/05_Scratch/02_Scratch/_index.html
-	modificados:     docs/.vitepress/dist/06_Laravel/05_Scratch/03_Secuenciales/_index.html
-	modificados:     docs/.vitepress/dist/06_Laravel/05_Scratch/04_Selectivas/_index.html
-	modificados:     docs/.vitepress/dist/06_Laravel/05_Scratch/05_Repetitivas/_index.html
-	modificados:     docs/.vitepress/dist/06_Laravel/05_Scratch/Ejemplos/index.html
-	modificados:     docs/.vitepress/dist/06_Laravel/05_Scratch/_index.html
-	modificados:     docs/.vitepress/dist/06_Laravel/_index.html
-	modificados:     docs/.vitepress/dist/404.html
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Modulos_01_Vision_general_index.md.n9Ep_th2.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Modulos_01_Vision_general_index.md.n9Ep_th2.lean.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Modulos_01_Vision_general_index_index.md.D4MA9oBf.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Modulos_01_Vision_general_index_index.md.D4MA9oBf.lean.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Modulos_cliente__index.md.Jy61_Pni.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Modulos_cliente__index.md.Jy61_Pni.lean.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Modulos_cliente_juanda_index.md.BbTPmM4H.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Modulos_cliente_juanda_index.md.BbTPmM4H.lean.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Modulos_cliente_oscar_index.md.e61y5tAA.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Modulos_cliente_oscar_index.md.e61y5tAA.lean.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Modulos_index.md.CXsgbl-f.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Modulos_index.md.CXsgbl-f.lean.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Modulos_servicios__index.md.Cw4TNvU_.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Modulos_servicios__index.md.Cw4TNvU_.lean.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Modulos_servicios_nacho_index.md.CMK3aeJz.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Modulos_servicios_nacho_index.md.CMK3aeJz.lean.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Modulos_servicios_oscar_index.md.CbwZvQok.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Modulos_servicios_oscar_index.md.CbwZvQok.lean.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Modulos_servidor__index.md.HITYZ_LK.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Modulos_servidor__index.md.HITYZ_LK.lean.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Modulos_servidor_manuel_index.md.DGxsm1bQ.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Modulos_servidor_manuel_index.md.DGxsm1bQ.lean.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Modulos_servidor_silvia_index.md.Rch38nPi.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Modulos_servidor_silvia_index.md.Rch38nPi.lean.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Motivacion_index.md.1DWfcLqL.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_02_Motivacion_index.md.1DWfcLqL.lean.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_index.md.DqVm8vKw.js
-	borrados:        docs/.vitepress/dist/assets/01_Presentacion_index.md.DqVm8vKw.lean.js
-	borrados:        docs/.vitepress/dist/assets/01_contenidos_index.md.DDTU9Ajs.js
-	borrados:        docs/.vitepress/dist/assets/01_contenidos_index.md.DDTU9Ajs.lean.js
-	borrados:        docs/.vitepress/dist/assets/02_Web_old_01_www_index.md.CjZGzanp.js
-	borrados:        docs/.vitepress/dist/assets/02_Web_old_01_www_index.md.CjZGzanp.lean.js
-	borrados:        docs/.vitepress/dist/assets/02_Web_old_02_redes_01_osi_index.md.BjK3Bri4.js
-	borrados:        docs/.vitepress/dist/assets/02_Web_old_02_redes_01_osi_index.md.BjK3Bri4.lean.js
-	borrados:        docs/.vitepress/dist/assets/02_Web_old_02_redes_index.md.C1GCwBUc.js
-	borrados:        docs/.vitepress/dist/assets/02_Web_old_02_redes_index.md.C1GCwBUc.lean.js
-	borrados:        docs/.vitepress/dist/assets/02_Web_old_03_linux_index.md.42_10kky.js
-	borrados:        docs/.vitepress/dist/assets/02_Web_old_03_linux_index.md.42_10kky.lean.js
-	borrados:        docs/.vitepress/dist/assets/02_Web_old_04_instalaciones_apache_index.md.tO3NCtlf.js
-	borrados:        docs/.vitepress/dist/assets/02_Web_old_04_instalaciones_apache_index.md.tO3NCtlf.lean.js
-	borrados:        docs/.vitepress/dist/assets/02_Web_old_04_instalaciones_apache_practica_index.md.CNdFQKUa.js
-	borrados:        docs/.vitepress/dist/assets/02_Web_old_04_instalaciones_apache_practica_index.md.CNdFQKUa.lean.js
-	borrados:        docs/.vitepress/dist/assets/02_Web_old_04_instalaciones_index.md.CSR0UwEo.js
-	borrados:        docs/.vitepress/dist/assets/02_Web_old_04_instalaciones_index.md.CSR0UwEo.lean.js
-	borrados:        docs/.vitepress/dist/assets/02_Web_old_06_http_https_index.md.BCDzgnvn.js
-	borrados:        docs/.vitepress/dist/assets/02_Web_old_06_http_https_index.md.BCDzgnvn.lean.js
-	borrados:        docs/.vitepress/dist/assets/02_Web_old_07_servidores_web_index.md.BkjxAUX_.js
-	borrados:        docs/.vitepress/dist/assets/02_Web_old_07_servidores_web_index.md.BkjxAUX_.lean.js
-	borrados:        docs/.vitepress/dist/assets/02_Web_old_07_servidores_web_practica_index.md.D3zT9ip0.js
-	borrados:        docs/.vitepress/dist/assets/02_Web_old_07_servidores_web_practica_index.md.D3zT9ip0.lean.js
-	borrados:        docs/.vitepress/dist/assets/02_Web_old_index.md.CNkldnNS.js
-	borrados:        docs/.vitepress/dist/assets/02_Web_old_index.md.CNkldnNS.lean.js
-	borrados:        docs/.vitepress/dist/assets/03_Programacion_01_conceptos_index.md.CJLzpWXd.js
-	borrados:        docs/.vitepress/dist/assets/03_Programacion_01_conceptos_index.md.CJLzpWXd.lean.js
-	borrados:        docs/.vitepress/dist/assets/03_Programacion_05_Scratch_01_Introduccion_index.md.C6ibw0ax.js
-	borrados:        docs/.vitepress/dist/assets/03_Programacion_05_Scratch_01_Introduccion_index.md.C6ibw0ax.lean.js
-	borrados:        docs/.vitepress/dist/assets/03_Programacion_05_Scratch_02_Scratch_index.md.CDbqvmlS.js
-	borrados:        docs/.vitepress/dist/assets/03_Programacion_05_Scratch_02_Scratch_index.md.CDbqvmlS.lean.js
-	borrados:        docs/.vitepress/dist/assets/03_Programacion_05_Scratch_03_Programando_Scratch_index.md.D1K0ErUR.js
-	borrados:        docs/.vitepress/dist/assets/03_Programacion_05_Scratch_03_Programando_Scratch_index.md.D1K0ErUR.lean.js
-	borrados:        docs/.vitepress/dist/assets/03_Programacion_05_Scratch_03_Secuenciales_index.md.Bf6UMIqL.js
-	borrados:        docs/.vitepress/dist/assets/03_Programacion_05_Scratch_03_Secuenciales_index.md.Bf6UMIqL.lean.js
-	borrados:        docs/.vitepress/dist/assets/03_Programacion_05_Scratch_04_Selectivas_index.md.DWOxpETQ.js
-	borrados:        docs/.vitepress/dist/assets/03_Programacion_05_Scratch_04_Selectivas_index.md.DWOxpETQ.lean.js
-	borrados:        docs/.vitepress/dist/assets/03_Programacion_05_Scratch_05_Repetitivas_index.md.BcarP2WC.js
-	borrados:        docs/.vitepress/dist/assets/03_Programacion_05_Scratch_05_Repetitivas_index.md.BcarP2WC.lean.js
-	borrados:        docs/.vitepress/dist/assets/03_Programacion_05_Scratch_Ejemplos_index.md.iNJSh3iH.js
-	borrados:        docs/.vitepress/dist/assets/03_Programacion_05_Scratch_Ejemplos_index.md.iNJSh3iH.lean.js
-	borrados:        docs/.vitepress/dist/assets/03_Programacion_05_Scratch_index.md.DoUVEpAs.js
-	borrados:        docs/.vitepress/dist/assets/03_Programacion_05_Scratch_index.md.DoUVEpAs.lean.js
-	borrados:        docs/.vitepress/dist/assets/03_Programacion_index.md.BaryC4XQ.js
-	borrados:        docs/.vitepress/dist/assets/03_Programacion_index.md.BaryC4XQ.lean.js
-	borrados:        docs/.vitepress/dist/assets/04_Scratch_05_Scratch_02_Scratch_index.md.DRWqQXQx.js
-	borrados:        docs/.vitepress/dist/assets/04_Scratch_05_Scratch_02_Scratch_index.md.DRWqQXQx.lean.js
-	borrados:        docs/.vitepress/dist/assets/04_Scratch_05_Scratch_03_Programando_Scratch_index.md.CucFwIYQ.js
-	borrados:        docs/.vitepress/dist/assets/04_Scratch_05_Scratch_03_Programando_Scratch_index.md.CucFwIYQ.lean.js
-	borrados:        docs/.vitepress/dist/assets/04_Scratch_05_Scratch_03_Secuenciales_index.md.eMtZxWHs.js
-	borrados:        docs/.vitepress/dist/assets/04_Scratch_05_Scratch_03_Secuenciales_index.md.eMtZxWHs.lean.js
-	borrados:        docs/.vitepress/dist/assets/04_Scratch_05_Scratch_04_Selectivas_index.md.Dj5rKQsR.js
-	borrados:        docs/.vitepress/dist/assets/04_Scratch_05_Scratch_04_Selectivas_index.md.Dj5rKQsR.lean.js
-	borrados:        docs/.vitepress/dist/assets/04_Scratch_05_Scratch_05_Repetitivas_index.md.CtJ1QMJO.js
-	borrados:        docs/.vitepress/dist/assets/04_Scratch_05_Scratch_05_Repetitivas_index.md.CtJ1QMJO.lean.js
-	borrados:        docs/.vitepress/dist/assets/04_Scratch_05_Scratch_Ejemplos_index.md.X9kIkbWn.js
-	borrados:        docs/.vitepress/dist/assets/04_Scratch_05_Scratch_Ejemplos_index.md.X9kIkbWn.lean.js
-	borrados:        docs/.vitepress/dist/assets/04_Scratch_05_Scratch_index.md.B_7CrcjN.js
-	borrados:        docs/.vitepress/dist/assets/04_Scratch_05_Scratch_index.md.B_7CrcjN.lean.js
-	borrados:        docs/.vitepress/dist/assets/04_php_100_proyecto_ia_enunciado.md.CJogdKB7.js
-	borrados:        docs/.vitepress/dist/assets/04_php_100_proyecto_ia_enunciado.md.CJogdKB7.lean.js
-	borrados:        docs/.vitepress/dist/assets/04_php_100_proyecto_ia_index.md.D5SJH1SD.js
-	borrados:        docs/.vitepress/dist/assets/04_php_100_proyecto_ia_index.md.D5SJH1SD.lean.js
-	borrados:        docs/.vitepress/dist/assets/04_php_100_proyecto_ia_prompt_cursor_1.md.5wPAxY30.js
-	borrados:        docs/.vitepress/dist/assets/04_php_100_proyecto_ia_prompt_cursor_1.md.5wPAxY30.lean.js
-	borrados:        docs/.vitepress/dist/assets/04_php_100_proyecto_ia_prompt_cursor_2.md.B7XbPwkY.js
-	borrados:        docs/.vitepress/dist/assets/04_php_100_proyecto_ia_prompt_cursor_2.md.B7XbPwkY.lean.js
-	borrados:        docs/.vitepress/dist/assets/04_php_13_1_composer_index.md.DGtJE0JZ.js
-	borrados:        docs/.vitepress/dist/assets/04_php_13_1_composer_index.md.DGtJE0JZ.lean.js
-	borrados:        docs/.vitepress/dist/assets/06_Laravel_01_conceptos_index.md.BobascSn.js
-	borrados:        docs/.vitepress/dist/assets/06_Laravel_01_conceptos_index.md.BobascSn.lean.js
-	borrados:        docs/.vitepress/dist/assets/06_Laravel_05_Scratch_01_Introduccion__index.md.D_QSN7j9.js
-	borrados:        docs/.vitepress/dist/assets/06_Laravel_05_Scratch_01_Introduccion__index.md.D_QSN7j9.lean.js
-	borrados:        docs/.vitepress/dist/assets/06_Laravel_05_Scratch_02_Scratch__index.md.BOVvOyhh.js
-	borrados:        docs/.vitepress/dist/assets/06_Laravel_05_Scratch_02_Scratch__index.md.BOVvOyhh.lean.js
-	borrados:        docs/.vitepress/dist/assets/06_Laravel_05_Scratch_03_Secuenciales__index.md.B-91qGZB.js
-	borrados:        docs/.vitepress/dist/assets/06_Laravel_05_Scratch_03_Secuenciales__index.md.B-91qGZB.lean.js
-	borrados:        docs/.vitepress/dist/assets/06_Laravel_05_Scratch_04_Selectivas__index.md.v97tw0Yn.js
-	borrados:        docs/.vitepress/dist/assets/06_Laravel_05_Scratch_04_Selectivas__index.md.v97tw0Yn.lean.js
-	borrados:        docs/.vitepress/dist/assets/06_Laravel_05_Scratch_05_Repetitivas__index.md.0tyg-_JL.js
-	borrados:        docs/.vitepress/dist/assets/06_Laravel_05_Scratch_05_Repetitivas__index.md.0tyg-_JL.lean.js
-	borrados:        docs/.vitepress/dist/assets/06_Laravel_05_Scratch_Ejemplos_index.md.aVDdQesC.js
-	borrados:        docs/.vitepress/dist/assets/06_Laravel_05_Scratch_Ejemplos_index.md.aVDdQesC.lean.js
-	borrados:        docs/.vitepress/dist/assets/06_Laravel_05_Scratch__index.md.BSPUc7K7.js
-	borrados:        docs/.vitepress/dist/assets/06_Laravel_05_Scratch__index.md.BSPUc7K7.lean.js
-	borrados:        docs/.vitepress/dist/assets/06_Laravel__index.md.BRH5U0pK.js
-	borrados:        docs/.vitepress/dist/assets/06_Laravel__index.md.BRH5U0pK.lean.js
-	borrados:        docs/.vitepress/dist/assets/app.CJe3dc1T.js
-	borrados:        docs/.vitepress/dist/assets/chunks/abnfDiagram-VCTEODGH.CrHePe-Z.js
-	borrados:        docs/.vitepress/dist/assets/chunks/arc.C63-QPP5.js
-	borrados:        docs/.vitepress/dist/assets/chunks/architectureDiagram-5GKGNRK7.CO9orp5R.js
-	borrados:        docs/.vitepress/dist/assets/chunks/blockDiagram-I7D4REHJ.Bej1o0WY.js
-	borrados:        docs/.vitepress/dist/assets/chunks/c4Diagram-7LVT6UL2.4QpxPieT.js
-	borrados:        docs/.vitepress/dist/assets/chunks/channel.CmUi8Cc_.js
-	borrados:        docs/.vitepress/dist/assets/chunks/chunk-2Q5K7J3B.lBZePfDo.js
-	borrados:        docs/.vitepress/dist/assets/chunks/chunk-5VM5RSS4.ChSnhVbF.js
-	borrados:        docs/.vitepress/dist/assets/chunks/chunk-F27PBJKO.yrZOLgSF.js
-	borrados:        docs/.vitepress/dist/assets/chunks/chunk-IMKFNOWR.CyFz4bTk.js
-	borrados:        docs/.vitepress/dist/assets/chunks/chunk-JWPE2WC7.DIL5own3.js
-	borrados:        docs/.vitepress/dist/assets/chunks/chunk-POPQ4Y6H.BR1xtyPs.js
-	borrados:        docs/.vitepress/dist/assets/chunks/chunk-SVP7TREG.SzGRnK7n.js
-	borrados:        docs/.vitepress/dist/assets/chunks/chunk-TICWLB2K.DvSjtXuS.js
-	borrados:        docs/.vitepress/dist/assets/chunks/chunk-XXDRQBXY.6uwCm-Lb.js
-	borrados:        docs/.vitepress/dist/assets/chunks/classDiagram-ZZMXUADV.CYFzr3_O.js
-	borrados:        docs/.vitepress/dist/assets/chunks/classDiagram-v2-VYDZK3BY.CYFzr3_O.js
-	borrados:        docs/.vitepress/dist/assets/chunks/commonjsHelpers.BosuxZz1.js
-	borrados:        docs/.vitepress/dist/assets/chunks/cose-bilkent-JH36ORCC.D4yI1Mpy.js
-	borrados:        docs/.vitepress/dist/assets/chunks/cynefin-OW5HDTMX.DLZL86Qk.js
-	borrados:        docs/.vitepress/dist/assets/chunks/cynefinDiagram-5FMLGOSQ.CusIInHH.js
-	borrados:        docs/.vitepress/dist/assets/chunks/dagre-GXQ25YYZ.BgskRoJW.js
-	borrados:        docs/.vitepress/dist/assets/chunks/diagram-S7CK7UJ4.Dk3Pk5u_.js
-	borrados:        docs/.vitepress/dist/assets/chunks/diagram-UQ7AKVKN.i2DLD94P.js
-	borrados:        docs/.vitepress/dist/assets/chunks/diagram-VSXAHHWV.BAxfMPHq.js
-	borrados:        docs/.vitepress/dist/assets/chunks/diagram-VX7I27RA.5Xi7IQEY.js
-	borrados:        docs/.vitepress/dist/assets/chunks/diagram-Z3DM3KII.Dn-Mhd3g.js
-	borrados:        docs/.vitepress/dist/assets/chunks/ebnfDiagram-PWID7BFC.B90WCXWZ.js
-	borrados:        docs/.vitepress/dist/assets/chunks/erDiagram-RLTQ6QDP._Y16K3OI.js
-	borrados:        docs/.vitepress/dist/assets/chunks/flowDiagram-HODETNUW.BRnKNar9.js
-	borrados:        docs/.vitepress/dist/assets/chunks/framework.BAcwvmoc.js
-	borrados:        docs/.vitepress/dist/assets/chunks/ganttDiagram-EL5Y4UJY.BwduFPHY.js
-	borrados:        docs/.vitepress/dist/assets/chunks/gitGraphDiagram-WWUBYQGX.ldM7xgLs.js
-	borrados:        docs/.vitepress/dist/assets/chunks/index.DQRWJCw1.js
-	borrados:        docs/.vitepress/dist/assets/chunks/infoDiagram-27XIBGKW.COvFQ9ZA.js
-	borrados:        docs/.vitepress/dist/assets/chunks/ishikawaDiagram-5VMMS53U.FrBO8dbX.js
-	borrados:        docs/.vitepress/dist/assets/chunks/journeyDiagram-3NMN7TZE.KUj8XD_o.js
-	borrados:        docs/.vitepress/dist/assets/chunks/kanban-definition-UXKFOSKX.DMZzH7lB.js
-	borrados:        docs/.vitepress/dist/assets/chunks/layout.1eGqJVai.js
-	borrados:        docs/.vitepress/dist/assets/chunks/mindmap-definition-YA3MSWOX.DZaeIEvW.js
-	borrados:        docs/.vitepress/dist/assets/chunks/pegDiagram-XKGWAZYB.Chfw_s1m.js
-	borrados:        docs/.vitepress/dist/assets/chunks/pieDiagram-E7YTZNPT.s2rth0nI.js
-	borrados:        docs/.vitepress/dist/assets/chunks/quadrantDiagram-AXDQQJYC.CGvWFu_o.js
-	borrados:        docs/.vitepress/dist/assets/chunks/railroadDiagram-O6MQD6OU.CnAJNV7W.js
-	borrados:        docs/.vitepress/dist/assets/chunks/requirementDiagram-BXWQKSXE.Dk0MtQ-S.js
-	borrados:        docs/.vitepress/dist/assets/chunks/sankeyDiagram-P5KCCOFB.DK4IuhKq.js
-	borrados:        docs/.vitepress/dist/assets/chunks/sequenceDiagram-WJ2MYXX4.vsP9rINO.js
-	borrados:        docs/.vitepress/dist/assets/chunks/sizeCapture-INFHLROL.CTPbFq_K.js
-	borrados:        docs/.vitepress/dist/assets/chunks/stateDiagram-D77RDMKH.DRTBJjSr.js
-	borrados:        docs/.vitepress/dist/assets/chunks/stateDiagram-v2-MP3YSRHH.D6fmdN6-.js
-	borrados:        docs/.vitepress/dist/assets/chunks/swimlanes-42K2YHIH.Cm4S-kJQ.js
-	borrados:        docs/.vitepress/dist/assets/chunks/swimlanesDiagram-VR7AAH4N.DyAHHcHH.js
-	borrados:        docs/.vitepress/dist/assets/chunks/timeline-definition-24CTP7MA.BOh-wCeJ.js
-	borrados:        docs/.vitepress/dist/assets/chunks/vennDiagram-4TSXK5OY.Cd3713FS.js
-	borrados:        docs/.vitepress/dist/assets/chunks/wardleyDiagram-VM6X3IG4.CEAJ_ESq.js
-	borrados:        docs/.vitepress/dist/assets/chunks/xychartDiagram-S5SC5T6Z.B_WkzI9D.js
-	borrados:        docs/.vitepress/dist/assets/construccion.md.Ddeqg5mq.js
-	borrados:        docs/.vitepress/dist/assets/construccion.md.Ddeqg5mq.lean.js
-	borrados:        docs/.vitepress/dist/assets/fundamentos-web_conceptos_index.md.BtI7urJo.js
-	borrados:        docs/.vitepress/dist/assets/fundamentos-web_conceptos_index.md.BtI7urJo.lean.js
-	borrados:        docs/.vitepress/dist/assets/fundamentos-web_http_index.md.DSrGEjx0.js
-	borrados:        docs/.vitepress/dist/assets/fundamentos-web_http_index.md.DSrGEjx0.lean.js
-	borrados:        docs/.vitepress/dist/assets/fundamentos-web_index.md.5TVkEbrf.js
-	borrados:        docs/.vitepress/dist/assets/fundamentos-web_index.md.5TVkEbrf.lean.js
-	borrados:        docs/.vitepress/dist/assets/fundamentos-web_internet_index.md.Bolp0huq.js
-	borrados:        docs/.vitepress/dist/assets/fundamentos-web_internet_index.md.Bolp0huq.lean.js
-	borrados:        docs/.vitepress/dist/assets/fundamentos-web_modelos-de-red_index.md.C9m7sfN5.js
-	borrados:        docs/.vitepress/dist/assets/fundamentos-web_modelos-de-red_index.md.C9m7sfN5.lean.js
-	borrados:        docs/.vitepress/dist/assets/fundamentos-web_redes_index.md.CaIQ22l8.js
-	borrados:        docs/.vitepress/dist/assets/fundamentos-web_redes_index.md.CaIQ22l8.lean.js
-	borrados:        docs/.vitepress/dist/assets/fundamentos-web_servidores_index.md.CA9Oltog.js
-	borrados:        docs/.vitepress/dist/assets/fundamentos-web_servidores_index.md.CA9Oltog.lean.js
-	borrados:        docs/.vitepress/dist/assets/fundamentos-web_servidores_practica_index.md.C4a0NXMy.js
-	borrados:        docs/.vitepress/dist/assets/fundamentos-web_servidores_practica_index.md.C4a0NXMy.lean.js
-	borrados:        docs/.vitepress/dist/assets/fundamentos-web_web_index.md.U0CMKjCP.js
-	borrados:        docs/.vitepress/dist/assets/fundamentos-web_web_index.md.U0CMKjCP.lean.js
-	borrados:        docs/.vitepress/dist/assets/index.md.BJl9Jg0-.js
-	borrados:        docs/.vitepress/dist/assets/index.md.BJl9Jg0-.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_arrays_ejercicios_Ejercicio01.md.BHPCtb9s.js
-	borrados:        docs/.vitepress/dist/assets/php_arrays_ejercicios_Ejercicio01.md.BHPCtb9s.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_arrays_ejercicios_Ejercicio02.md.CIZ3M9tj.js
-	borrados:        docs/.vitepress/dist/assets/php_arrays_ejercicios_Ejercicio02.md.CIZ3M9tj.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_arrays_ejercicios_Ejercicio03.md.kjB4IWZ2.js
-	borrados:        docs/.vitepress/dist/assets/php_arrays_ejercicios_Ejercicio03.md.kjB4IWZ2.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_arrays_ejercicios_Ejercicio04.md.ByAhz7cn.js
-	borrados:        docs/.vitepress/dist/assets/php_arrays_ejercicios_Ejercicio04.md.ByAhz7cn.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_arrays_ejercicios_Ejercicio05.md.CQLxiB78.js
-	borrados:        docs/.vitepress/dist/assets/php_arrays_ejercicios_Ejercicio05.md.CQLxiB78.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_arrays_ejercicios_Ejercicio06.md.ktV-aKKd.js
-	borrados:        docs/.vitepress/dist/assets/php_arrays_ejercicios_Ejercicio06.md.ktV-aKKd.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_arrays_ejercicios_Ejercicio07.md.CYkFDZzy.js
-	borrados:        docs/.vitepress/dist/assets/php_arrays_ejercicios_Ejercicio07.md.CYkFDZzy.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_arrays_ejercicios_Ejercicio08.md.C2EBhz4U.js
-	borrados:        docs/.vitepress/dist/assets/php_arrays_ejercicios_Ejercicio08.md.C2EBhz4U.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_arrays_ejercicios_Ejercicio09.md.Cd5SRMEP.js
-	borrados:        docs/.vitepress/dist/assets/php_arrays_ejercicios_Ejercicio09.md.Cd5SRMEP.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_arrays_index.md.DQoaIAVp.js
-	borrados:        docs/.vitepress/dist/assets/php_arrays_index.md.DQoaIAVp.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_bases-de-datos_index.md.CD7KlXIq.js
-	borrados:        docs/.vitepress/dist/assets/php_bases-de-datos_index.md.CD7KlXIq.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_declaraciones_index.md.Hle4faAa.js
-	borrados:        docs/.vitepress/dist/assets/php_declaraciones_index.md.Hle4faAa.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_index.md.blzsVyCm.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_index.md.blzsVyCm.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_secuenciales_ejercicio01_index.md.BiPCGl0V.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_secuenciales_ejercicio01_index.md.BiPCGl0V.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_secuenciales_ejercicio02_index.md.Dy-KDLdR.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_secuenciales_ejercicio02_index.md.Dy-KDLdR.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_secuenciales_ejercicio03_index.md.B1X914OA.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_secuenciales_ejercicio03_index.md.B1X914OA.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_secuenciales_ejercicio04_index.md.D_YpSHnl.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_secuenciales_ejercicio04_index.md.D_YpSHnl.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_secuenciales_ejercicio05_index.md.n-3MP0AA.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_secuenciales_ejercicio05_index.md.n-3MP0AA.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_secuenciales_ejercicio06_index.md.B8OX-Nqw.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_secuenciales_ejercicio06_index.md.B8OX-Nqw.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_secuenciales_ejercicio07_index.md.8o2g-4FO.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_secuenciales_ejercicio07_index.md.8o2g-4FO.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio08_index.md.BjMW3JGB.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio08_index.md.BjMW3JGB.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio09_index.md.Dhsiu4Zo.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio09_index.md.Dhsiu4Zo.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio10_index.md.TXFV5Yu_.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio10_index.md.TXFV5Yu_.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio11_index.md.N7o0EvWL.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio11_index.md.N7o0EvWL.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio12_index.md.jfowFl_E.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio12_index.md.jfowFl_E.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio13_index.md.h15-qzhm.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio13_index.md.h15-qzhm.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio14_index.md.Dwqrqagz.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio14_index.md.Dwqrqagz.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio15_index.md.BA2UXkYS.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio15_index.md.BA2UXkYS.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio16_index.md.DwbTrqeH.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio16_index.md.DwbTrqeH.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio17_index.md.CE5llsgL.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio17_index.md.CE5llsgL.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio18_index.md.BCmDeMdp.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio18_index.md.BCmDeMdp.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio19_index.md.bXb5WtCQ.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio19_index.md.bXb5WtCQ.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio20_index.md.CJ2xLRpb.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio20_index.md.CJ2xLRpb.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio21_index.md.ByHRg3zx.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio21_index.md.ByHRg3zx.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio22_index.md.C1q9gZBq.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio22_index.md.C1q9gZBq.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio23_index.md.DA3yFIh0.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_ejercicio23_index.md.DA3yFIh0.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_match_ejercicio24_index.md.SnBgKA6L.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_match_ejercicio24_index.md.SnBgKA6L.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_match_ejercicio25_index.md.C4iVr7g2.js
-	borrados:        docs/.vitepress/dist/assets/php_ejercicios_selectivos_match_ejercicio25_index.md.C4iVr7g2.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_empezando_index.md.CfyFLXMf.js
-	borrados:        docs/.vitepress/dist/assets/php_empezando_index.md.CfyFLXMf.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_escribiendo_index.md.BNh0wnpv.js
-	borrados:        docs/.vitepress/dist/assets/php_escribiendo_index.md.BNh0wnpv.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_estructuras-control_index.md.QRtdm_y0.js
-	borrados:        docs/.vitepress/dist/assets/php_estructuras-control_index.md.QRtdm_y0.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_estructuras-repetitivas_index.md.DugOSjTc.js
-	borrados:        docs/.vitepress/dist/assets/php_estructuras-repetitivas_index.md.DugOSjTc.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_estructuras-selectivas_index.md.Cxi092LF.js
-	borrados:        docs/.vitepress/dist/assets/php_estructuras-selectivas_index.md.Cxi092LF.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_expresiones_index.md.DzaMLcNP.js
-	borrados:        docs/.vitepress/dist/assets/php_expresiones_index.md.DzaMLcNP.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_formularios_ejercicios_Ejercicio01.md.9eXHobNd.js
-	borrados:        docs/.vitepress/dist/assets/php_formularios_ejercicios_Ejercicio01.md.9eXHobNd.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_formularios_index.md.DoCy7wR4.js
-	borrados:        docs/.vitepress/dist/assets/php_formularios_index.md.DoCy7wR4.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_funciones_index.md.BndX50eX.js
-	borrados:        docs/.vitepress/dist/assets/php_funciones_index.md.BndX50eX.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_index.md.mNDp0dvd.js
-	borrados:        docs/.vitepress/dist/assets/php_index.md.mNDp0dvd.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_introduccion_index.md.l-e3W-Y_.js
-	borrados:        docs/.vitepress/dist/assets/php_introduccion_index.md.l-e3W-Y_.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_objetos_index.md.DgJTngym.js
-	borrados:        docs/.vitepress/dist/assets/php_objetos_index.md.DgJTngym.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_otros-aspectos_index.md.D6z0hhOf.js
-	borrados:        docs/.vitepress/dist/assets/php_otros-aspectos_index.md.D6z0hhOf.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_persistencia_index.md.BdRgQdjP.js
-	borrados:        docs/.vitepress/dist/assets/php_persistencia_index.md.BdRgQdjP.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_tipo-bool_index.md.DjgkAsA8.js
-	borrados:        docs/.vitepress/dist/assets/php_tipo-bool_index.md.DjgkAsA8.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_tipo-entero_index.md.BUQpuXwM.js
-	borrados:        docs/.vitepress/dist/assets/php_tipo-entero_index.md.BUQpuXwM.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_tipo-string_index.md.CJrtDcT7.js
-	borrados:        docs/.vitepress/dist/assets/php_tipo-string_index.md.CJrtDcT7.lean.js
-	borrados:        docs/.vitepress/dist/assets/php_tipos_index.md.DV_SdMOw.js
-	borrados:        docs/.vitepress/dist/assets/php_tipos_index.md.DV_SdMOw.lean.js
-	borrados:        docs/.vitepress/dist/assets/scratch_clones-subprogramas_index.md.DYHILQS1.js
-	borrados:        docs/.vitepress/dist/assets/scratch_clones-subprogramas_index.md.DYHILQS1.lean.js
-	borrados:        docs/.vitepress/dist/assets/scratch_ejemplos_ejercicios_Ejercicio01_index.md.Dg2IlkuA.js
-	borrados:        docs/.vitepress/dist/assets/scratch_ejemplos_ejercicios_Ejercicio01_index.md.Dg2IlkuA.lean.js
-	borrados:        docs/.vitepress/dist/assets/scratch_ejemplos_index.md.DfHcxAA3.js
-	borrados:        docs/.vitepress/dist/assets/scratch_ejemplos_index.md.DfHcxAA3.lean.js
-	borrados:        docs/.vitepress/dist/assets/scratch_entorno-scratch_index.md.Bpu_Rxkf.js
-	borrados:        docs/.vitepress/dist/assets/scratch_entorno-scratch_index.md.Bpu_Rxkf.lean.js
-	borrados:        docs/.vitepress/dist/assets/scratch_estructuras-repetitivas_index.md.b02cgebY.js
-	borrados:        docs/.vitepress/dist/assets/scratch_estructuras-repetitivas_index.md.b02cgebY.lean.js
-	borrados:        docs/.vitepress/dist/assets/scratch_estructuras-secuenciales_index.md.CPltp1gL.js
-	borrados:        docs/.vitepress/dist/assets/scratch_estructuras-secuenciales_index.md.CPltp1gL.lean.js
-	borrados:        docs/.vitepress/dist/assets/scratch_estructuras-selectivas_index.md.C3-VdXbZ.js
-	borrados:        docs/.vitepress/dist/assets/scratch_estructuras-selectivas_index.md.C3-VdXbZ.lean.js
-	borrados:        docs/.vitepress/dist/assets/scratch_index.md.DOOsvdEK.js
-	borrados:        docs/.vitepress/dist/assets/scratch_index.md.DOOsvdEK.lean.js
-	borrados:        docs/.vitepress/dist/assets/scratch_instrucciones_index.md.CE12fmIB.js
-	borrados:        docs/.vitepress/dist/assets/scratch_instrucciones_index.md.CE12fmIB.lean.js
-	borrados:        docs/.vitepress/dist/assets/scratch_primeros-pasos_index.md.jhUdpPUK.js
-	borrados:        docs/.vitepress/dist/assets/scratch_primeros-pasos_index.md.jhUdpPUK.lean.js
-	borrados:        docs/.vitepress/dist/assets/style.DcxQWCnZ.css
-	modificados:     docs/.vitepress/dist/construccion.html
-	modificados:     docs/.vitepress/dist/fundamentos-web/conceptos/index.html
-	modificados:     docs/.vitepress/dist/fundamentos-web/http/index.html
-	modificados:     docs/.vitepress/dist/fundamentos-web/index.html
-	modificados:     docs/.vitepress/dist/fundamentos-web/internet/index.html
-	modificados:     docs/.vitepress/dist/fundamentos-web/modelos-de-red/index.html
-	modificados:     docs/.vitepress/dist/fundamentos-web/redes/index.html
-	modificados:     docs/.vitepress/dist/fundamentos-web/servidores/index.html
-	modificados:     docs/.vitepress/dist/fundamentos-web/servidores/practica/index.html
-	modificados:     docs/.vitepress/dist/fundamentos-web/web/index.html
-	modificados:     docs/.vitepress/dist/hashmap.json
-	modificados:     docs/.vitepress/dist/index.html
-	borrados:        docs/.vitepress/dist/php/arrays/ejercicios/Ejercicio01.html
-	borrados:        docs/.vitepress/dist/php/arrays/ejercicios/Ejercicio02.html
-	borrados:        docs/.vitepress/dist/php/arrays/ejercicios/Ejercicio03.html
-	borrados:        docs/.vitepress/dist/php/arrays/ejercicios/Ejercicio04.html
-	borrados:        docs/.vitepress/dist/php/arrays/ejercicios/Ejercicio05.html
-	borrados:        docs/.vitepress/dist/php/arrays/ejercicios/Ejercicio06.html
-	borrados:        docs/.vitepress/dist/php/arrays/ejercicios/Ejercicio07.html
-	borrados:        docs/.vitepress/dist/php/arrays/ejercicios/Ejercicio08.html
-	borrados:        docs/.vitepress/dist/php/arrays/ejercicios/Ejercicio09.html
-	modificados:     docs/.vitepress/dist/php/arrays/index.html
-	modificados:     docs/.vitepress/dist/php/bases-de-datos/index.html
-	modificados:     docs/.vitepress/dist/php/declaraciones/index.html
-	modificados:     docs/.vitepress/dist/php/ejercicios/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/secuenciales/ejercicio01/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/secuenciales/ejercicio02/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/secuenciales/ejercicio03/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/secuenciales/ejercicio04/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/secuenciales/ejercicio05/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/secuenciales/ejercicio06/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/secuenciales/ejercicio07/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/selectivos/ejercicio08/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/selectivos/ejercicio09/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/selectivos/ejercicio10/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/selectivos/ejercicio11/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/selectivos/ejercicio12/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/selectivos/ejercicio13/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/selectivos/ejercicio14/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/selectivos/ejercicio15/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/selectivos/ejercicio16/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/selectivos/ejercicio17/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/selectivos/ejercicio18/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/selectivos/ejercicio19/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/selectivos/ejercicio20/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/selectivos/ejercicio21/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/selectivos/ejercicio22/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/selectivos/ejercicio23/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/selectivos/match/ejercicio24/index.html
-	borrados:        docs/.vitepress/dist/php/ejercicios/selectivos/match/ejercicio25/index.html
-	modificados:     docs/.vitepress/dist/php/empezando/index.html
-	modificados:     docs/.vitepress/dist/php/escribiendo/index.html
-	modificados:     docs/.vitepress/dist/php/estructuras-control/index.html
-	modificados:     docs/.vitepress/dist/php/estructuras-repetitivas/index.html
-	modificados:     docs/.vitepress/dist/php/estructuras-selectivas/index.html
-	modificados:     docs/.vitepress/dist/php/expresiones/index.html
-	modificados:     docs/.vitepress/dist/php/formularios/ejercicios/Ejercicio01.html
-	modificados:     docs/.vitepress/dist/php/formularios/index.html
-	modificados:     docs/.vitepress/dist/php/funciones/index.html
-	modificados:     docs/.vitepress/dist/php/index.html
-	modificados:     docs/.vitepress/dist/php/introduccion/index.html
-	modificados:     docs/.vitepress/dist/php/objetos/index.html
-	modificados:     docs/.vitepress/dist/php/otros-aspectos/index.html
-	modificados:     docs/.vitepress/dist/php/persistencia/index.html
-	modificados:     docs/.vitepress/dist/php/tipo-bool/index.html
-	modificados:     docs/.vitepress/dist/php/tipo-entero/index.html
-	modificados:     docs/.vitepress/dist/php/tipo-string/index.html
-	modificados:     docs/.vitepress/dist/php/tipos/index.html
-	modificados:     docs/.vitepress/dist/scratch/clones-subprogramas/index.html
-	modificados:     docs/.vitepress/dist/scratch/ejemplos/ejercicios/Ejercicio01/index.html
-	modificados:     docs/.vitepress/dist/scratch/ejemplos/index.html
-	modificados:     docs/.vitepress/dist/scratch/entorno-scratch/index.html
-	modificados:     docs/.vitepress/dist/scratch/estructuras-repetitivas/index.html
-	modificados:     docs/.vitepress/dist/scratch/estructuras-secuenciales/index.html
-	modificados:     docs/.vitepress/dist/scratch/estructuras-selectivas/index.html
-	modificados:     docs/.vitepress/dist/scratch/index.html
-	modificados:     docs/.vitepress/dist/scratch/instrucciones/index.html
-	modificados:     docs/.vitepress/dist/scratch/primeros-pasos/index.html
+import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
+import footnote from 'markdown-it-footnote'
+import { fileURLToPath } from 'node:url'
+import { dawsContainers } from '../markdows'
+import {createRequire} from 'node:module'
 
-Archivos sin seguimiento:
-  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
-	.idea/deployment.xml
-	.idea/php.xml
-	.idea/phpunit.xml
-	.idea/sshConfigs.xml
-	.idea/vcs.xml
-	.idea/webServers.xml
+export function crearConfiguracion({
+                                       configUrl,
+                                       title = 'Apuntes',
+                                       description = 'Materiales docentes',
+                                       nav = [],
+                                       sidebar = {},
+                                       rewrites = {},
+                                       opcionesVite = {},
+                                       opcionesMarkdown = {},
+                                       opcionesTema = {},
+                                       ...opciones                                   }) {
+    // Directorio raíz del proyecto que utiliza esta configuración
+    const proyecto = fileURLToPath(new URL('../../../', configUrl))
+    // Directorio raíz de la infraestructura compartida
+    const arquitectura = fileURLToPath(new URL('../../', import.meta.url))
 
+    const requireProyecto = createRequire(configUrl)
+    const rutaVue = requireProyecto.resolve('vue');
+
+    const {
+        config: configurarMarkdown,
+        ...otrasOpcionesMarkdown
+    } = opcionesMarkdown;
+
+    return withMermaid(
+        defineConfig({
+            ...opciones,
+
+            lang: 'es-ES',
+            title,
+            description,
+
+
+            vite: {
+                ...opcionesVite,
+
+                resolve: {
+                    ...opcionesVite.resolve,
+
+                    alias: [
+                        ...(Array.isArray(opcionesVite.resolve?.alias)
+                            ? opcionesVite.resolve.alias
+                            : []),
+                        {
+                            find: /^vue$/,
+                            replacement: rutaVue
+                        }
+                    ],
+
+                    dedupe: [
+                        ...new Set([
+                            ...(opcionesVite.resolve?.dedupe ?? []),
+                            'vue'
+                        ])
+                    ]
+                },
+
+                server: {
+                    ...opcionesVite.server,
+                    fs: {
+                        ...opcionesVite.server?.fs,
+                        allow: [
+                            proyecto,
+                            arquitectura,
+                            ...(opcionesVite.server?.fs?.allow ?? [])
+                        ]
+                    }
+                },
+
+                optimizeDeps: {
+                    ...opcionesVite.optimizeDeps,
+                    include: [
+                        ...new Set([
+                            'fastdom',
+                            ...(opcionesVite.optimizeDeps?.include ?? [])
+                        ])
+                    ]
+                }
+            },
+
+
+            markdown: {
+                lineNumbers: true,
+
+                toc: {
+                    level: [1, 2, 3, 4]
+                },
+
+                ...otrasOpcionesMarkdown,
+
+                config(md, env) {
+                    dawsContainers(md)
+                    md.use(footnote)
+
+                    configurarMarkdown?.(md, env)
+                }
+            },
+
+
+            mermaid: {
+                theme: 'default',
+                securityLevel: 'loose'
+            },
+
+            rewrites,
+
+            themeConfig: {
+                nav,
+                sidebar,
+                outline: "deep",
+
+                search: {
+                    provider: 'local'
+                },
+                ...opcionesTema
+            }
+        })
+    )
+}
